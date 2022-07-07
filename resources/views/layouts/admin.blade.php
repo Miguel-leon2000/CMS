@@ -10,13 +10,13 @@
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
     <title>CoreUI Pro Bootstrap Admin Template</title>
 
-    <link href="./css/coreui-icons.min.css" rel="stylesheet">
-    <link href="./css/fag-icon.min.css" rel="stylesheet">
-    <link href="./css/font-awesome.min.css" rel="stylesheet">
-    <link href="./css/simple-line-icons.css" rel="stylesheet">
+    <link href="{{asset('css/coreui-icons.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/fag-icon.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/simple-line-icons.css')}}" rel="stylesheet">
 
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="./css/pace.min.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('css/pace.min.css')}}" rel="stylesheet">
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
    
 </head>
@@ -402,12 +402,12 @@
         </div>
     </footer>
 
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/pace.min.js"></script>
-    <script src="./js/perfect-scrollbar.min.js"></script>
-    <script src="./js/coreui.min.js"></script>
+    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/pace.min.js')}}"></script>
+    <script src="{{asset('js/perfect-scrollbar.min.js')}}"></script>
+    <script src="{{asset('js/coreui.min.js')}}"></script>
  
 
    
