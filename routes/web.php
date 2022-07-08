@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.admin');
-});
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+
+Route::get('/', 'Auth\LoginController@showLogin')->middleware('guest')->name('loginform');
+Route::post('login', 'Auth/LoginController@login')->name('login');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
