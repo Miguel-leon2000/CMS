@@ -45,4 +45,45 @@ class PlantillaController extends Controller
         Session::flash('succes', 'Se registró la plantilla con exito');
         return Redirect::to('admin/plantillas');
     }
+
+    function edit($id){
+
+        $plantilla = DB::table('plantilla')
+        ->where('id', '=',$id)
+        ->first();
+        return view('panel.plantillas.edit', compact('plantilla'));
+    }
+
+    function update(Request $request, $id){
+
+        $validate = $this->validate($request,[
+            'titulo' => 'required|max:150',
+            'descripcion' => 'required',
+            'portada'=>'mimes:jpeg,bmp,jpg,png|max:5000',
+
+        ]);
+
+        $plantilla = Plantilla::findOrFail($id);
+        $plantilla->titulo = $request->get('titulo');
+        $plantilla->descripcion = $request->get('descripcion');
+        if(Input::hasFile('portada')){
+            $file=Input::file('portada');
+            $file->move(public_path().'/portadas',time().".".$file->getClientOriginalExtension());
+            $plantilla->portada=time().".".$file->getClientOriginalExtension();
+        }
+
+        $plantilla->update();
+
+        Session::flash('succes', 'Se registró la plantilla con exito');
+        return Redirect::to('admin/plantillas');
+    }
+
+    function destroy($id){
+        $plantilla = Plantilla::findOrFail($id);
+        $plantilla->delete();
+
+        Session::flash('succes', 'Se eliminó la plantilla con exito');
+        return Redirect::to('admin/plantillas');
+    }
+
 }

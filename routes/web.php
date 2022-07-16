@@ -20,6 +20,9 @@ Route::post('login', 'Auth/LoginController@login')->name('login');
 Route::get('admin/plantillas', 'PlantillaController@index')->name('index.plantilla');
 Route::get('admin/plantilla/crear', 'PlantillaController@create')->name('create.plantilla');
 Route::post('admin/plantilla/crear', 'PlantillaController@store')->name('store.plantilla');
+Route::get('admin/plantilla/actualizar/{id}', 'PlantillaController@edit')->name('edit.plantilla');
+Route::patch('admin/plantilla/actualizar/{id}', 'PlantillaController@update')->name('update.plantilla');
+Route::delete('admin/plantilla/{id}', 'PlantillaController@destroy')->name('destroy.plantilla');
 
 Auth::routes();
 

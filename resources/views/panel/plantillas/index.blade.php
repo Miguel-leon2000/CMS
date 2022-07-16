@@ -44,11 +44,12 @@
                                                                         Opciones
                                                                     </button>
                                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                        <a class="dropdown-item" href="#">Eliminar</a>
-                                                                        <a class="dropdown-item" href="#">Editar</a>
+                                                                        <a class="dropdown-item" data-toggle="modal" data-target="#modal-{{$item->id}}">Eliminar</a>
+                                                                        <a class="dropdown-item" href="{{URL::action('PlantillaController@edit', $item->id)}}">Editar</a>
                             
                                                                     </div>
                                                                     </div>
+                                                                    @include('panel.plantillas.modal')
                                                                 </td>
                                                             </tbody>
                                                         @endforeach
