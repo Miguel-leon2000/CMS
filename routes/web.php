@@ -17,12 +17,18 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/', 'Auth\LoginController@showLogin')->middleware('guest')->name('loginform');
 Route::post('login', 'Auth/LoginController@login')->name('login');
 
+/*PLANTILLAS*/
 Route::get('admin/plantillas', 'PlantillaController@index')->name('index.plantilla');
 Route::get('admin/plantilla/crear', 'PlantillaController@create')->name('create.plantilla');
 Route::post('admin/plantilla/crear', 'PlantillaController@store')->name('store.plantilla');
 Route::get('admin/plantilla/actualizar/{id}', 'PlantillaController@edit')->name('edit.plantilla');
 Route::patch('admin/plantilla/actualizar/{id}', 'PlantillaController@update')->name('update.plantilla');
 Route::delete('admin/plantilla/{id}', 'PlantillaController@destroy')->name('destroy.plantilla');
+
+/*PAGINA*/
+Route::get('admin/paginas', 'PaginaController@index')->name('index.pagina');
+Route::get('admin/pagina/crear', 'PaginaController@create')->name('create.pagina');
+Route::post('admin/pagina/crear', 'PaginaController@store')->name('store.pagina');
 
 Auth::routes();
 
