@@ -40,7 +40,29 @@ class PaginaController extends Controller
         $pagina->estado = 'activo';
         $pagina->save();
 
-        Session::flash('succes', 'Se registró la página con exito');
+        Session::flash('succes', 'Se registró la página con exito.');
+        return Redirect::to('admin/paginas');
+    }
+
+    function update(Request $request,$id){
+        $validate = $this->validate($request,[
+            'dominio' => 'required|unique:pagina|regex:/^[0-9a-zA-Z\s]+$/u',
+
+        ]);
+
+        $pagina = Pagina::findOrFail($id);
+        $pagina->dominio=$request->get('dominio');
+        $pagina->update();
+
+        Session::flash('succes', 'Se cambió el dominio con exito.');
+        return Redirect::to('admin/paginas');
+    }
+
+    function destroy($id){
+        $pagina = Pagina::findOrFail($id);
+        $pagina->delete();
+
+        Session::flash('succes', 'Se eliminó la página con exito.');
         return Redirect::to('admin/paginas');
     }
 }

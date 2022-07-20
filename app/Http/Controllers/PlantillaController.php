@@ -82,7 +82,7 @@ class PlantillaController extends Controller
         $plantilla = Plantilla::findOrFail($id);
         $plantilla->delete();
 
-        Session::flash('succes', 'Se eliminó la plantilla con exito');
+        Session::flash('succes', 'Se eliminó la plantilla con exito.');
         return Redirect::to('admin/plantillas');
     }
 

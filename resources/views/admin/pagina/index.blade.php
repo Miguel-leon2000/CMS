@@ -51,9 +51,47 @@
                                                                             Opciones
                                                                         </button>
                                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                            <a class="dropdown-item" data-toggle="modal" data-target="#modal-{{$item->id}}">Eliminar</a>
-                                                                            <a class="dropdown-item" href="{{URL::action('PlantillaController@edit', $item->id)}}">Editar</a>
+                                                                            <a class="dropdown-item" data-toggle="modal" data-target="#modal-delete-{{$item->id}}">Eliminar</a>
+                                                                            <a class="dropdown-item" data-toggle="modal" data-target="#open-{{$item->id}}">Cambiar dominio</a>
                                 
+                                                                        </div>
+                                                                        @include('admin.pagina.modal')
+
+                                                                        <!-- Modal -->
+                                                                        <div class="modal fade" id="open-{{$item->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                                        <form method="POST" action="{{route('update.pagina',$item->id)}}">
+                                                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                                                <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title" id="exampleModalCenterTitle">Cambiar dominio</h5>
+                                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    
+                                                                                        {{ csrf_field() }}
+                                                                                        <input name="_method" type="hidden" value="PATCH">
+                                                                                        <div class="row">
+                                                                                            <div class="col-lg-12">
+                                                                                            <input type="text" class="form-control {{ $errors->has('dominio') ? ' is-invalid' : '' }}"  
+                                                                                            name="dominio" placeholder="Dominio de tu web" value="{{$item->dominio}}">
+                                                                                                @if ($errors->has('dominio'))
+                                                                                                    <span class="invalid-feedback" role="alert">
+                                                                                                        <strong>{{ $errors->first('dominio') }}</strong>
+                                                                                                    </span>
+                                                                                                @endif 
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                                                    <button type="submit" class="btn btn-primary">Guardar</button>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
                                                                         </div>
                                                                     </div>
                                                                 </td>

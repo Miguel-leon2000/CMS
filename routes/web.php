@@ -29,6 +29,8 @@ Route::delete('admin/plantilla/{id}', 'PlantillaController@destroy')->name('dest
 Route::get('admin/paginas', 'PaginaController@index')->name('index.pagina');
 Route::get('admin/pagina/crear', 'PaginaController@create')->name('create.pagina');
 Route::post('admin/pagina/crear', 'PaginaController@store')->name('store.pagina');
+Route::patch('admin/pagina/{id}', 'PaginaController@update')->name('update.pagina');
+Route::delete('admin/pagina/{id}', 'PaginaController@destroy')->name('destroy.pagina');
 
 Auth::routes();
 
