@@ -284,12 +284,33 @@
         <div class="sidebar">
             <nav class="sidebar-nav ps ps--active-y">
                 <ul class="nav">
+
                     <li class="nav-item">
-                        <a class="nav-link active" href="main.html">
+                        <a class="nav-link" href="{{route('dashboard')}}">
                             <i class="nav-icon icon-speedometer"></i> Dashboard
-                            <span class="badge badge-info">NEW</span>
                         </a>
                     </li>
+
+                    @if (auth::check())
+                        @if (auth()->user()->role=='ADMIN')
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('index.plantilla')}}">
+                                    <i class="nav-icon icon-speedometer"></i> Plantillas
+                                </a>
+                            </li>
+                        @endif
+                    @endif
+
+                    @if (auth::check())
+                        @if (auth()->user()->role=='USUARIO')
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('index.pagina')}}">
+                                    <i class="nav-icon icon-speedometer"></i> Páginas
+                                </a>
+                            </li>
+                        @endif
+                    @endif
+                    
                     <li class="nav-title">Theme</li>
                     <li class="nav-item">
                         <a class="nav-link" href="colors.html">
