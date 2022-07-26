@@ -311,10 +311,10 @@
                         @endif
                     @endif
                     
-                    <li class="nav-title">Theme</li>
+                    <li class="nav-title">Configuraciones</li>
                     <li class="nav-item">
-                        <a class="nav-link" href="colors.html">
-                            <i class="nav-icon icon-drop"></i> Colors</a>
+                        <a class="nav-link" href="{{route('index.menu')}}">
+                            <i class="nav-icon icon-drop"></i> Menú</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="typography.html">
@@ -371,6 +371,7 @@
     <script src="{{asset('js/pace.min.js')}}"></script>
     <script src="{{asset('js/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('js/coreui.min.js')}}"></script>
+    <script src="{{asset('js/jscolor.js')}}"></script>
  
 
    
