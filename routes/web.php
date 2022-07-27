@@ -38,6 +38,8 @@ Route::delete('admin/pagina/{id}', 'PaginaController@destroy')->name('destroy.pa
 /*MENU*/
 Route::get('admin/configuracion/menu', 'ConfigMenuController@index')->name('index.menu');
 Route::patch('admin/configuracion/menu/{id}', 'ConfigMenuController@update')->name('update.menu');
+Route::post('admin/configuracion/menu', 'ConfigMenuController@store')->name('store.menu');
+Route::delete('admin/configuracion/menu/{id}','ConfigMenuController@destroy')->name('destroy.menu');
 
 Auth::routes();
 

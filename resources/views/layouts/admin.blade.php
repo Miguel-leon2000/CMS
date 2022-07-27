@@ -17,6 +17,7 @@
 
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link href="{{asset('css/pace.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/all.css')}}" rel="stylesheet">
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
    
 </head>
@@ -372,11 +373,13 @@
     <script src="{{asset('js/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('js/coreui.min.js')}}"></script>
     <script src="{{asset('js/jscolor.js')}}"></script>
+   
  
 
    
     <script type="text/javascript" src="./js/custom-tooltips.min.js" class="view-script"></script>
     <script type="text/javascript" src="./js/main.js" class="view-script"></script>
+    <script src="{{asset('js/all.js')}}"></script>
 </body>
 
 </html>

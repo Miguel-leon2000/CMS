@@ -23,7 +23,11 @@ class ConfigMenuController extends Controller
         ->where('idpagina','=',$current_page)
         ->first();
 
-        return view('admin.menu.index', compact('menu'));
+        $items = DB::table('config_item')
+        ->where('idmenu','=',$menu->{'id'})
+        ->get();
+
+        return view('admin.menu.index', compact('menu','items'));
     }
 
     function update(Request $request, $id){
@@ -44,4 +48,32 @@ class ConfigMenuController extends Controller
         return Redirect::to('admin/configuracion/menu');
         
     }
+
+    function store(Request $request){
+        $validate = $this->validate($request,[
+            'titulo' => 'required|max:150',
+            'enlace' => 'required|max:350',
+            'icono' => 'required|max:50',
+
+        ]);
+
+        $item = new ConfigItem;
+        $item->titulo = $request->get('titulo');
+        $item->icono = $request->get('icono');
+        $item->enlace = $request->get('enlace');
+        $item->idmenu = $request->get('idmenu');
+        $item->save();
+
+        Session::flash('succes', 'Se agregó el elemento del menú con exito.');
+        return Redirect::to('admin/configuracion/menu');
+    }
+
+    function destroy($id){
+        $item = ConfigItem::findOrFail($id);
+        $item->delete();
+
+        Session::flash('succes', 'Se eliminó el menú con exito.');
+        return Redirect::to('admin/configuracion/menu');
+    }
+
 }

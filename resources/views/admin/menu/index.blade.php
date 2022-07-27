@@ -65,7 +65,9 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-lg-12 form-group">
-                                                    <form action="">
+                                                    <form method="POST" action="{{route('store.menu')}}" role="form">
+                                                        {{ csrf_field() }}
+                                                        <input type="hidden" value="{{$menu->id}}" name="idmenu">
                                                         <div class="row">
                                                             <div class="col-lg-12 form-group">
                                                                 <input type="text" class="form-control" placeholder="Enlace del menú" name="enlace">
@@ -77,13 +79,39 @@
                                                                 <input type="text" class="form-control" placeholder="Icono del menú" name="icono">
                                                             </div>
                                                             <div class="col-lg-2" form-group>
-                                                                <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                                                                <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-check"></i> Registrar</button>
                                                             </div>
                                                         </div>
                                                     </form>
                                                 </div>
-                                                <div class="col-lg-12 form-group">
-
+                                                <div class="col-lg-12 form-group" style="margin-top:25px">
+                                                    <table class="table table-sm">
+                                                        <thead class="thead-dark">
+                                                            <th>Icono</th>
+                                                            <th>Titulo</th>
+                                                            <th>Enlace</th>
+                                                            <th>Opciones</th>
+                                                        </thead>
+                                                        @foreach ($items as $item)
+                                                            <tbody>
+                                                                <td><?php echo $item->icono?></td>
+                                                                <td>{{$item->titulo}}</td>
+                                                                <td><a href="{{$item->enlace}}" target="_blanck">{{$item->enlace}}</a></td>
+                                                                <td>
+                                                                    <div class="dropdown">
+                                                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                            <i class="fas fa-cog"></i>
+                                                                        </button>
+                                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                            <a class="dropdown-item" data-toggle="modal" data-target="#modal-{{$item->id}}">Eliminar</a>
+                                                                            <a class="dropdown-item" href="#">Editar</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    @include('admin.menu.modal')
+                                                                </td>
+                                                            </tbody>
+                                                        @endforeach
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
