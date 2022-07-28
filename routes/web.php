@@ -39,6 +39,8 @@ Route::delete('admin/pagina/{id}', 'PaginaController@destroy')->name('destroy.pa
 Route::get('admin/configuracion/menu', 'ConfigMenuController@index')->name('index.menu');
 Route::patch('admin/configuracion/menu/{id}', 'ConfigMenuController@update')->name('update.menu');
 Route::post('admin/configuracion/menu', 'ConfigMenuController@store')->name('store.menu');
+Route::get('admin/configuracion/menu/{id}', 'ConfigMenuController@edit_item')->name('edit_item');
+Route::patch('admin/configuracion/menu/item/{id}', 'ConfigMenuController@update_item')->name('update_item');
 Route::delete('admin/configuracion/menu/{id}','ConfigMenuController@destroy')->name('destroy.menu');
 
 Auth::routes();

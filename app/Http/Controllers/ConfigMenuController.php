@@ -68,6 +68,43 @@ class ConfigMenuController extends Controller
         return Redirect::to('admin/configuracion/menu');
     }
 
+    public function edit_item($id){
+
+        $pagina = DB::table('users')
+        ->where('current_page','=',auth()->user()->current_page)
+        ->first();
+
+        $current_page = $pagina->{'current_page'};
+
+        $menu = DB::table('config_menu')
+        ->where('idpagina','=',$current_page)
+        ->first();
+
+        $item = ConfigItem::findOrFail($id);
+
+        return view('admin.menu.edit',compact('item','menu'));
+    }
+
+    function update_item(Request $request, $id){
+        $validate = $this->validate($request,[
+            'titulo' => 'required|max:150',
+            'enlace' => 'required|max:350',
+            'icono' => 'required|max:50',
+
+        ]);
+
+        $item = ConfigItem::findOrFail($id);
+        $item->titulo = $request->get('titulo');
+        $item->icono = $request->get('icono');
+        $item->enlace = $request->get('enlace');
+        $item->idmenu = $request->get('idmenu');
+
+        $item->update();
+
+        Session::flash('succes', 'Se actualizó el elemento del menú con exito.');
+        return Redirect::to('admin/configuracion/menu');
+    }
+
     function destroy($id){
         $item = ConfigItem::findOrFail($id);
         $item->delete();

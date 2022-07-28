@@ -104,7 +104,7 @@
                                                                         </button>
                                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                                             <a class="dropdown-item" data-toggle="modal" data-target="#modal-{{$item->id}}">Eliminar</a>
-                                                                            <a class="dropdown-item" href="#">Editar</a>
+                                                                            <a class="dropdown-item" href="{{route('edit_item',$item->id)}}">Editar</a>
                                                                         </div>
                                                                     </div>
                                                                     @include('admin.menu.modal')
