@@ -318,8 +318,8 @@
                             <i class="nav-icon icon-drop"></i> Menú</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="typography.html">
-                            <i class="nav-icon icon-pencil"></i> Typography</a>
+                        <a class="nav-link" href="{{route('index.general')}}">
+                            <i class="nav-icon icon-pencil"></i> General</a>
                     </li>
                     <li class="nav-title">Components</li>
                     <li class="nav-item nav-dropdown">

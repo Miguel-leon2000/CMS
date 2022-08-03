@@ -43,6 +43,10 @@ Route::get('admin/configuracion/menu/{id}', 'ConfigMenuController@edit_item')->n
 Route::patch('admin/configuracion/menu/item/{id}', 'ConfigMenuController@update_item')->name('update_item');
 Route::delete('admin/configuracion/menu/{id}','ConfigMenuController@destroy')->name('destroy.menu');
 
+/*GENERAL*/
+Route::get('admin/configuracion/general', 'ConfigGeneralController@index')->name('index.general');
+Route::patch('admin/configuracion/general/{id}', 'ConfigGeneralController@update_general')->name('update.general');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
