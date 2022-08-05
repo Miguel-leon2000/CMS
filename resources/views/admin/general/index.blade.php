@@ -10,15 +10,7 @@
 
                         <div class="animated fadeIn">
                             <div class="row">
-                                @if ($errors->any())
-                                    <div class="alert-danger">
-                                        <ul>
-                                            @foreach ($errors->all() as $error)
-                                                <li>{{ $error }}</li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-                                @endif
+                                
                                 <div class="col-lg-8">
                                     @if(Session::has('succes'))
                                         <div class="alert alert-success alert-dismissible fade show mb-4 mt-4" role="alert">

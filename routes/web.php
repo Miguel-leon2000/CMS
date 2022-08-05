@@ -47,6 +47,10 @@ Route::delete('admin/configuracion/menu/{id}','ConfigMenuController@destroy')->n
 Route::get('admin/configuracion/general', 'ConfigGeneralController@index')->name('index.general');
 Route::patch('admin/configuracion/general/{id}', 'ConfigGeneralController@update_general')->name('update.general');
 
+/*FOOTER*/
+Route::get('admin/configuracion/footer', 'ConfigFooterController@index')->name('index.footer');
+Route::patch('admin/configuracion/footer/{id}', 'ConfigFooterController@update_footer')->name('update.footer');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

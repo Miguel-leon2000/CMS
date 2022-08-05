@@ -321,6 +321,10 @@
                         <a class="nav-link" href="{{route('index.general')}}">
                             <i class="nav-icon icon-pencil"></i> General</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.footer')}}">
+                            <i class="nav-icon icon-pencil"></i> Footer</a>
+                    </li>
                     <li class="nav-title">Components</li>
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#">
