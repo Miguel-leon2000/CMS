@@ -19,12 +19,13 @@
     <link href="{{asset('css/pace.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/all.css')}}" rel="stylesheet">
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-   
+
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show   pace-done pace-done">
     <div class="pace  pace-inactive pace-inactive">
-        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99"
+            style="transform: translate3d(100%, 0px, 0px);">
             <div class="pace-progress-inner"></div>
         </div>
         <div class="pace-activity"></div>
@@ -51,12 +52,14 @@
                 <a class="nav-link" href="#">Settings</a>
             </li>
             <li class="nav-item px-3">
-                <a class="nav-link text-danger" href="https://coreui.io/#sneak-peek"><strong>Sneak Peek! Try CoreUI PRO 3.0.0-alpha</strong></a>
+                <a class="nav-link text-danger" href="https://coreui.io/#sneak-peek"><strong>Sneak Peek! Try CoreUI PRO
+                        3.0.0-alpha</strong></a>
             </li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
             <li class="nav-item dropdown d-md-down-none">
-                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
                     <i class="icon-bell"></i>
                     <span class="badge badge-pill badge-danger">5</span>
                 </a>
@@ -80,40 +83,44 @@
                     <a class="dropdown-item" href="#">
                         <div class="text-uppercase mb-1">
                             <small>
-<b>CPU Usage</b>
-</small>
+                                <b>CPU Usage</b>
+                            </small>
                         </div>
                         <span class="progress progress-xs">
-<div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
                         <small class="text-muted">348 Processes. 1/4 Cores.</small>
                     </a>
                     <a class="dropdown-item" href="#">
                         <div class="text-uppercase mb-1">
                             <small>
-<b>Memory Usage</b>
-</small>
+                                <b>Memory Usage</b>
+                            </small>
                         </div>
                         <span class="progress progress-xs">
-<div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
                         <small class="text-muted">11444GB/16384MB</small>
                     </a>
                     <a class="dropdown-item" href="#">
                         <div class="text-uppercase mb-1">
                             <small>
-<b>SSD 1 Usage</b>
-</small>
+                                <b>SSD 1 Usage</b>
+                            </small>
                         </div>
                         <span class="progress progress-xs">
-<div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
                         <small class="text-muted">243GB/256GB</small>
                     </a>
                 </div>
             </li>
             <li class="nav-item dropdown d-md-down-none">
-                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
                     <i class="icon-list"></i>
                     <span class="badge badge-pill badge-warning">15</span>
                 </a>
@@ -124,52 +131,57 @@
                     <a class="dropdown-item" href="#">
                         <div class="small mb-1">Upgrade NPM &amp; Bower
                             <span class="float-right">
-<strong>0%</strong>
-</span>
+                                <strong>0%</strong>
+                            </span>
                         </div>
                         <span class="progress progress-xs">
-<div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
                     </a>
                     <a class="dropdown-item" href="#">
                         <div class="small mb-1">ReactJS Version
                             <span class="float-right">
-<strong>25%</strong>
-</span>
+                                <strong>25%</strong>
+                            </span>
                         </div>
                         <span class="progress progress-xs">
-<div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
                     </a>
                     <a class="dropdown-item" href="#">
                         <div class="small mb-1">VueJS Version
                             <span class="float-right">
-<strong>50%</strong>
-</span>
+                                <strong>50%</strong>
+                            </span>
                         </div>
                         <span class="progress progress-xs">
-<div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
                     </a>
                     <a class="dropdown-item" href="#">
                         <div class="small mb-1">Add new layouts
                             <span class="float-right">
-<strong>75%</strong>
-</span>
+                                <strong>75%</strong>
+                            </span>
                         </div>
                         <span class="progress progress-xs">
-<div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
                     </a>
                     <a class="dropdown-item" href="#">
                         <div class="small mb-1">Angular 2 Cli Version
                             <span class="float-right">
-<strong>100%</strong>
-</span>
+                                <strong>100%</strong>
+                            </span>
                         </div>
                         <span class="progress progress-xs">
-<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-</span>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
                     </a>
                     <a class="dropdown-item text-center" href="#">
                         <strong>View all tasks</strong>
@@ -177,7 +189,8 @@
                 </div>
             </li>
             <li class="nav-item dropdown d-md-down-none">
-                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
                     <i class="icon-envelope-letter"></i>
                     <span class="badge badge-pill badge-info">7</span>
                 </a>
@@ -198,8 +211,10 @@
                                 <small class="text-muted float-right mt-1">Just now</small>
                             </div>
                             <div class="text-truncate font-weight-bold">
-                                <span class="fa fa-exclamation text-danger"></span> Important message</div>
-                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                                <span class="fa fa-exclamation text-danger"></span> Important message
+                            </div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor incididunt...</div>
                         </div>
                     </a>
                     <a class="dropdown-item" href="#">
@@ -215,7 +230,8 @@
                                 <small class="text-muted float-right mt-1">5 minutes ago</small>
                             </div>
                             <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor incididunt...</div>
                         </div>
                     </a>
                     <a class="dropdown-item" href="#">
@@ -231,7 +247,8 @@
                                 <small class="text-muted float-right mt-1">1:52 PM</small>
                             </div>
                             <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor incididunt...</div>
                         </div>
                     </a>
                     <a class="dropdown-item" href="#">
@@ -247,7 +264,8 @@
                                 <small class="text-muted float-right mt-1">4:03 PM</small>
                             </div>
                             <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
-                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor incididunt...</div>
                         </div>
                     </a>
                     <a class="dropdown-item text-center" href="#">
@@ -256,22 +274,23 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
                     <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <div class="dropdown-header text-center">
                         <strong>Account</strong>
                     </div>
-                   
-                        @if (Auth::check())
-                            <form method="POST" action="{{route('logout')}}">
-                            {{csrf_field()}}
-                            <button class="btn btn-danger m-4"><i class="fa fa-lock"></i> Cerrar sesión</button>
-                            </form>   
-                        @endif
-                  
-                    </div>
+
+                    @if (Auth::check())
+                    <form method="POST" action="{{route('logout')}}">
+                        {{csrf_field()}}
+                        <button class="btn btn-danger m-4"><i class="fa fa-lock"></i> Cerrar sesión</button>
+                    </form>
+                    @endif
+
+                </div>
             </li>
         </ul>
         <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
@@ -293,25 +312,25 @@
                     </li>
 
                     @if (auth::check())
-                        @if (auth()->user()->role=='ADMIN')
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{route('index.plantilla')}}">
-                                    <i class="nav-icon icon-speedometer"></i> Plantillas
-                                </a>
-                            </li>
-                        @endif
+                    @if (auth()->user()->role=='ADMIN')
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.plantilla')}}">
+                            <i class="nav-icon icon-speedometer"></i> Plantillas
+                        </a>
+                    </li>
+                    @endif
                     @endif
 
                     @if (auth::check())
-                        @if (auth()->user()->role=='USUARIO')
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{route('index.pagina')}}">
-                                    <i class="nav-icon icon-speedometer"></i> Páginas
-                                </a>
-                            </li>
-                        @endif
+                    @if (auth()->user()->role=='USUARIO')
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.pagina')}}">
+                            <i class="nav-icon icon-speedometer"></i> Páginas
+                        </a>
+                    </li>
                     @endif
-                    
+                    @endif
+
                     <li class="nav-title">Configuraciones</li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.menu')}}">
@@ -325,6 +344,10 @@
                         <a class="nav-link" href="{{route('index.footer')}}">
                             <i class="nav-icon icon-pencil"></i> Footer</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.entrada')}}">
+                            <i class="nav-icon icon-pencil"></i> Entradas</a>
+                    </li>
                     <li class="nav-title">Components</li>
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#">
@@ -337,10 +360,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="base/cards.html">
                                     <i class="nav-icon icon-puzzle"></i> Cards</a>
-                            </li>  
+                            </li>
                         </ul>
                     </li>
-                    
+
                 </ul>
                 <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
                     <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
@@ -355,9 +378,9 @@
         <main class="main">
 
             @yield('contenido')
-                     
+
         </main>
-        
+
     </div>
     <footer class="app-footer">
         <div>
@@ -377,10 +400,15 @@
     <script src="{{asset('js/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('js/coreui.min.js')}}"></script>
     <script src="{{asset('js/jscolor.js')}}"></script>
-   
- 
+    <script src="{{asset('js/tinymce.min.js')}}"></script>
 
-   
+    <script>
+        tinymce.init({
+            selector: '#editor'
+        });
+    </script>
+
+
     <script type="text/javascript" src="./js/custom-tooltips.min.js" class="view-script"></script>
     <script type="text/javascript" src="./js/main.js" class="view-script"></script>
     <script src="{{asset('js/all.js')}}"></script>

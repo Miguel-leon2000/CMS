@@ -51,6 +51,14 @@ Route::patch('admin/configuracion/general/{id}', 'ConfigGeneralController@update
 Route::get('admin/configuracion/footer', 'ConfigFooterController@index')->name('index.footer');
 Route::patch('admin/configuracion/footer/{id}', 'ConfigFooterController@update_footer')->name('update.footer');
 
+/*ENTRADA*/
+Route::get('admin/entradas', 'EntradaController@index')->name('index.entrada');
+Route::get('admin/entrada/crear', 'EntradaController@create')->name('create.entrada');
+Route::post('admin/entrada/crear', 'EntradaController@store')->name('store.entrada');
+Route::get('admin/entrada/{id}', 'EntradaController@edit')->name('edit.entrada');
+Route::patch('admin/entrada/{id}', 'EntradaController@update')->name('update.entrada');
+Route::delete('admin/entradas/{id}', 'EntradaController@destroy')->name('destroy.entrada');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
