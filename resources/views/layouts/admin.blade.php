@@ -400,7 +400,7 @@
     <script src="{{asset('js/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('js/coreui.min.js')}}"></script>
     <script src="{{asset('js/jscolor.js')}}"></script>
-    <script src="{{asset('js/tinymce.min.js')}}"></script>
+    <script src="{{asset('tinymce/tinymce.min.js')}}"></script>
 
     <script>
         tinymce.init({
