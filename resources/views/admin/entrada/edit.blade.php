@@ -23,7 +23,7 @@
                     </div>
                     @endif
 
-                    <div class="col-lg-8">
+                    <div class="col-lg-10">
                         <form method="POST" action="{{route('update.entrada',$entrada->id)}}" role="form">
                             {{ csrf_field() }}
                             <input name="_method" type="hidden" value="PATCH">

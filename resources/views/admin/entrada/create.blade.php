@@ -23,7 +23,7 @@
                     </div>
                     @endif
 
-                    <div class="col-lg-8">
+                    <div class="col-lg-10">
                         <form method="POST" action="{{route('store.entrada')}}" role="form">
                             {{ csrf_field() }}
                             <div class="card">
