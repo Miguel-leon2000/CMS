@@ -52,10 +52,11 @@
                                                             <i class="fas fa-cog"></i>
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="#">Eliminar</a>
-                                                            <a class="dropdown-item" href="#">Editar</a>
+                                                            <a class="dropdown-item" data-toggle="modal" data-target="#modal-{{$item->id}}">Eliminar</a>
+                                                            <a class="dropdown-item" href="{{route('edit.entrada',$item->id)}}">Editar</a>
                                                       
                                                         </div>
+                                                        @include('admin.entrada.modal')
                                                     </div>
                                                 </td>
                                             </tbody>

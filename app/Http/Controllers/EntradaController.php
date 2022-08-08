@@ -42,4 +42,36 @@ class EntradaController extends Controller
         return Redirect::to('admin/entradas');
 
     }
+
+    public function edit($id){
+
+        $entrada = Entrada::findOrFail($id);
+
+        return view('admin.entrada.edit',compact('entrada'));
+    }
+
+    public function update(Request $request, $id){
+        $validate = $this->validate($request,[
+            'titulo' => 'required|max:150',
+            'contenido' => 'required',
+
+        ]);
+
+        $entrada = Entrada::findOrFail($id);
+        $entrada->titulo = $request->get('titulo');
+        $entrada->contenido = $request->get('contenido');
+        $entrada->idpagina = auth()->user()->current_page;
+        $entrada->update();
+
+        Session::flash('succes', 'Se actualizó la entrada con éxito.');
+        return Redirect::to('admin/entradas');
+    }
+
+    function destroy($id){
+        $entrada = Entrada::findOrFail($id);
+        $entrada->delete();
+
+        Session::flash('succes', 'Se eliminó la entrada con éxito.');
+        return Redirect::to('admin/entradas');
+    }
 }
