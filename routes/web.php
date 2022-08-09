@@ -59,6 +59,14 @@ Route::get('admin/entrada/{id}', 'EntradaController@edit')->name('edit.entrada')
 Route::patch('admin/entrada/{id}', 'EntradaController@update')->name('update.entrada');
 Route::delete('admin/entradas/{id}', 'EntradaController@destroy')->name('destroy.entrada');
 
+/*EQUIPO*/
+Route::get('admin/equipos', 'EquipoController@index')->name('index.equipo');
+Route::get('admin/equipo/crear', 'EquipoController@create')->name('create.equipo');
+Route::post('admin/equipo/crear', 'EquipoController@store')->name('store.equipo');
+Route::get('admin/equipo/{id}', 'EquipoController@edit')->name('edit.equipo');
+Route::patch('admin/equipo/{id}', 'EquipoController@update')->name('update.equipo');
+Route::delete('admin/equipo/{id}', 'EquipoController@destroy')->name('destroy.equipo');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

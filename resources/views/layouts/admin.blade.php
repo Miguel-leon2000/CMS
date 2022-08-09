@@ -331,7 +331,7 @@
                     @endif
                     @endif
 
-                    <li class="nav-title">Configuraciones</li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.menu')}}">
                             <i class="nav-icon icon-drop"></i> Menú</a>
@@ -344,25 +344,16 @@
                         <a class="nav-link" href="{{route('index.footer')}}">
                             <i class="nav-icon icon-pencil"></i> Footer</a>
                     </li>
+                    <li class="nav-title">CONTENIDO</li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.entrada')}}">
                             <i class="nav-icon icon-pencil"></i> Entradas</a>
                     </li>
-                    <li class="nav-title">Components</li>
-                    <li class="nav-item nav-dropdown">
-                        <a class="nav-link nav-dropdown-toggle" href="#">
-                            <i class="nav-icon icon-puzzle"></i> Base</a>
-                        <ul class="nav-dropdown-items">
-                            <li class="nav-item">
-                                <a class="nav-link" href="base/breadcrumb.html">
-                                    <i class="nav-icon icon-puzzle"></i> Breadcrumb</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="base/cards.html">
-                                    <i class="nav-icon icon-puzzle"></i> Cards</a>
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.equipo')}}">
+                            <i class="nav-icon icon-pencil"></i> Equipo</a>
                     </li>
+                    
 
                 </ul>
                 <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
