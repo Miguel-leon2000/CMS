@@ -67,6 +67,14 @@ Route::get('admin/equipo/{id}', 'EquipoController@edit')->name('edit.equipo');
 Route::patch('admin/equipo/{id}', 'EquipoController@update')->name('update.equipo');
 Route::delete('admin/equipo/{id}', 'EquipoController@destroy')->name('destroy.equipo');
 
+/*ENLACE*/
+Route::get('admin/enlaces', 'EnlaceController@index')->name('index.enlace');
+Route::get('admin/enlace/crear', 'EnlaceController@create')->name('create.enlace');
+Route::post('admin/enlace/crear', 'EnlaceController@store')->name('store.enlace');
+Route::get('admin/enlace/{id}', 'EnlaceController@edit')->name('edit.enlace');
+Route::patch('admin/enlace/{id}', 'EnlaceController@update')->name('update.enlace');
+Route::delete('admin/enlace/{id}', 'EnlaceController@destroy')->name('destroy.enlace');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

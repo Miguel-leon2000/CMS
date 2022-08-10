@@ -353,6 +353,10 @@
                         <a class="nav-link" href="{{route('index.equipo')}}">
                             <i class="nav-icon icon-pencil"></i> Equipo</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.enlace')}}">
+                            <i class="nav-icon icon-pencil"></i> Enlaces</a>
+                    </li>
                     
 
                 </ul>
