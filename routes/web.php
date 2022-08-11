@@ -75,6 +75,12 @@ Route::get('admin/enlace/{id}', 'EnlaceController@edit')->name('edit.enlace');
 Route::patch('admin/enlace/{id}', 'EnlaceController@update')->name('update.enlace');
 Route::delete('admin/enlace/{id}', 'EnlaceController@destroy')->name('destroy.enlace');
 
+/*GALERIA*/
+Route::get('admin/galeria', 'GaleriaController@index')->name('index.galeria');
+Route::get('admin/galeria/crear', 'GaleriaController@create')->name('create.galeria');
+Route::post('admin/galeria/crear', 'GaleriaController@store')->name('store.galeria');
+Route::delete('admin/galeria/{id}', 'GaleriaController@destroy')->name('destroy.galeria');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

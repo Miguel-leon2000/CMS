@@ -357,6 +357,10 @@
                         <a class="nav-link" href="{{route('index.enlace')}}">
                             <i class="nav-icon icon-pencil"></i> Enlaces</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.galeria')}}">
+                            <i class="nav-icon icon-pencil"></i> Galeria</a>
+                    </li>
                     
 
                 </ul>
