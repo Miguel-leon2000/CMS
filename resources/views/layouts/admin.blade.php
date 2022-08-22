@@ -361,6 +361,14 @@
                         <a class="nav-link" href="{{route('index.galeria')}}">
                             <i class="nav-icon icon-pencil"></i> Galeria</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.seccion_uno')}}">
+                            <i class="nav-icon icon-pencil"></i> Sección uno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.seccion_dos')}}">
+                            <i class="nav-icon icon-pencil"></i> Sección dos</a>
+                    </li>
                     
 
                 </ul>

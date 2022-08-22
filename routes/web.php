@@ -81,6 +81,14 @@ Route::get('admin/galeria/crear', 'GaleriaController@create')->name('create.gale
 Route::post('admin/galeria/crear', 'GaleriaController@store')->name('store.galeria');
 Route::delete('admin/galeria/{id}', 'GaleriaController@destroy')->name('destroy.galeria');
 
+/*SECCION UNO*/
+Route::get('admin/seccion_uno', 'SeccionUnoController@index')->name('index.seccion_uno');
+Route::patch('admin/seccion_uno/{id}', 'SeccionUnoController@update')->name('update.seccion_uno');
+
+/*SECCION DOS*/
+Route::get('admin/seccion_dos', 'SeccionDosController@index')->name('index.seccion_dos');
+Route::patch('admin/seccion_dos/{id}', 'SeccionDosController@update')->name('update.seccion_dos');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
