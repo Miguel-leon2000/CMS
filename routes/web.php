@@ -89,6 +89,14 @@ Route::patch('admin/seccion_uno/{id}', 'SeccionUnoController@update')->name('upd
 Route::get('admin/seccion_dos', 'SeccionDosController@index')->name('index.seccion_dos');
 Route::patch('admin/seccion_dos/{id}', 'SeccionDosController@update')->name('update.seccion_dos');
 
+/*SLIDER*/
+Route::get('admin/slider', 'SliderController@index')->name('index.slider');
+Route::get('admin/slider/crear', 'SliderController@create')->name('create.slider');
+Route::post('admin/slider/crear', 'SliderController@store')->name('store.slider');
+Route::get('admin/slider/{id}', 'SliderController@edit')->name('edit.slider');
+Route::patch('admin/slider/{id}', 'SliderController@update')->name('update.slider');
+Route::delete('admin/slider/{id}', 'SliderController@destroy')->name('destroy.slider');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

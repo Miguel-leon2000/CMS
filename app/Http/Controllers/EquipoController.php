@@ -29,7 +29,7 @@ class EquipoController extends Controller
         $validate = $this->validate($request,[
             'nombres' => 'required|max:150',
             'cargo' => 'required|max:50',
-            'imagen'=>'mimes:jpeg,bmp,jpg,png|max:5000',
+            'imagen'=>'required|mimes:jpeg,bmp,jpg,png|max:5000',
 
         ]);
 
