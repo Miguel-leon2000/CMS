@@ -331,24 +331,34 @@
                     @endif
                     @endif
 
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-puzzle"></i>Configuraciones</a>
+
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('index.menu')}}">
+                                    <i class="nav-icon icon-drop"></i> Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('index.general')}}">
+                                    <i class="nav-icon icon-pencil"></i> General</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('index.footer')}}">
+                                    <i class="nav-icon icon-pencil"></i> Footer</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('index.entrada')}}">
+                                    <i class="nav-icon icon-pencil"></i> Entradas</a>
+                            </li>
+                        </ul>
+                        
+                    </li>
+
                     
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('index.menu')}}">
-                            <i class="nav-icon icon-drop"></i> Menú</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('index.general')}}">
-                            <i class="nav-icon icon-pencil"></i> General</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('index.footer')}}">
-                            <i class="nav-icon icon-pencil"></i> Footer</a>
-                    </li>
                     <li class="nav-title">CONTENIDO</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('index.entrada')}}">
-                            <i class="nav-icon icon-pencil"></i> Entradas</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.equipo')}}">
                             <i class="nav-icon icon-pencil"></i> Equipo</a>
@@ -369,7 +379,11 @@
                         <a class="nav-link" href="{{route('index.seccion_dos')}}">
                             <i class="nav-icon icon-pencil"></i> Sección dos</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.slider')}}">
+                            <i class="nav-icon icon-pencil"></i> Sliders</a>
+                    </li>
+
 
                 </ul>
                 <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
@@ -411,15 +425,14 @@
 
     <script>
     tinymce.init({
-                selector: '#editor',
-                height: "500px",
-                plugins: [
-                    'print preview fullpage paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons spellchecker mediaembed pageembed linkchecker powerpaste formatpainter casechange',
-                ],
-                    menubar: 'file edit view insert format tools table help',
-                    toolbar:
-                    'casechange undo redo  bold italic underline strikethrough  fontselect fontsizeselect formatselect alignleft aligncenter alignright alignjustify outdent indent numlist bullist  forecolor backcolor removeformat pagebreak charmap emoticons fullscreen preview save print insertfile image media template link anchor codesample fullpage ltr rtl styleselect pageembed formatpainter',
-                });
+        selector: '#editor',
+        height: "500px",
+        plugins: [
+            'print preview fullpage paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons spellchecker mediaembed pageembed linkchecker powerpaste formatpainter casechange',
+        ],
+        menubar: 'file edit view insert format tools table help',
+        toolbar: 'casechange undo redo  bold italic underline strikethrough  fontselect fontsizeselect formatselect alignleft aligncenter alignright alignjustify outdent indent numlist bullist  forecolor backcolor removeformat pagebreak charmap emoticons fullscreen preview save print insertfile image media template link anchor codesample fullpage ltr rtl styleselect pageembed formatpainter',
+    });
     </script>
 
 

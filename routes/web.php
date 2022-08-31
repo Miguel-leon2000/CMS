@@ -97,6 +97,14 @@ Route::get('admin/slider/{id}', 'SliderController@edit')->name('edit.slider');
 Route::patch('admin/slider/{id}', 'SliderController@update')->name('update.slider');
 Route::delete('admin/slider/{id}', 'SliderController@destroy')->name('destroy.slider');
 
+/*BLOG*/
+Route::get('admin/blog', 'BlogController@index')->name('index.blog');
+Route::get('admin/blog/crear', 'BlogController@create')->name('create.blog');
+Route::post('admin/blog/crear', 'BlogController@store')->name('store.blog');
+Route::get('admin/blog/{id}', 'BlogController@edit')->name('edit.blog');
+Route::patch('admin/blog/{id}', 'BlogController@update')->name('update.blog');
+Route::delete('admin/blog/{id}', 'BlogController@destroy')->name('destroy.blog');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
