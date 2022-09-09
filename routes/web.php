@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('{dominio}', 'DominioController@open_page')->name('open_page');
+
+Route::get('home/dashboard', 'DashboardController@index')->name('dashboard');
 
 
 Route::get('/', 'Auth\LoginController@showLogin')->middleware('guest')->name('loginform');

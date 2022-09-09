@@ -348,17 +348,18 @@
                                 <a class="nav-link" href="{{route('index.footer')}}">
                                     <i class="nav-icon icon-pencil"></i> Footer</a>
                             </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{route('index.entrada')}}">
-                                    <i class="nav-icon icon-pencil"></i> Entradas</a>
-                            </li>
+
+
                         </ul>
-                        
+
                     </li>
 
-                    
+
                     <li class="nav-title">CONTENIDO</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.entrada')}}">
+                            <i class="nav-icon icon-pencil"></i> Entradas</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.equipo')}}">
                             <i class="nav-icon icon-pencil"></i> Equipo</a>
@@ -382,6 +383,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.slider')}}">
                             <i class="nav-icon icon-pencil"></i> Sliders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.blog')}}">
+                            <i class="nav-icon icon-pencil"></i> Blog</a>
                     </li>
 
 
