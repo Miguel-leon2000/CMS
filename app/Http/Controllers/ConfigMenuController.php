@@ -40,8 +40,8 @@ class ConfigMenuController extends Controller
 
         $menu = ConfigMenu::findOrFail($id);
         $menu->titulo = $request->get('titulo');
-        $menu->color = $request->get('color');
-        $menu->background = $request->get('background');
+        $menu->color = '#'.$request->get('color');
+        $menu->background = '#'.$request->get('background');
         $menu->update();
 
         Session::flash('succes', 'Se actualizó el menú con exito.');

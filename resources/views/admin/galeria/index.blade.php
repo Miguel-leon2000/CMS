@@ -88,7 +88,7 @@
                                             <div class="col-lg-3 form-group">
                                                 <div class="card">
                                                     <img src="{{asset('galeria/'.$item->imagen)}}"
-                                                        style="width: 100% !important">
+                                                        style="width: 100% !important; height: 200px !important">
                                                     <div class="card-body">
                                                         <button type="submit"
                                                             class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-{{$item->id}}">Eliminar</button>

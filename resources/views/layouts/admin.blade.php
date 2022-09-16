@@ -328,9 +328,6 @@
                             <i class="nav-icon icon-speedometer"></i> Páginas
                         </a>
                     </li>
-                    @endif
-                    @endif
-
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#">
                             <i class="nav-icon icon-puzzle"></i>Configuraciones</a>
@@ -388,6 +385,10 @@
                         <a class="nav-link" href="{{route('index.blog')}}">
                             <i class="nav-icon icon-pencil"></i> Blog</a>
                     </li>
+                    @endif
+                    @endif
+
+                    
 
 
                 </ul>

@@ -10,16 +10,14 @@ class DominioController extends Controller
     public function open_page($dominio){
         $pagina = DB::table('pagina')
         ->where('dominio','=',$dominio)
-        ->first();
+        ->first();  
         
         if(!$pagina){
             abort('404');
-        } else{
+        }else{
             $idpagina = $pagina->{'id'};
             $idplantilla = $pagina->{'idplantilla'};
-
-            dd($idplantilla);
-
+            
             $menu = DB::table('config_menu')
             ->where('idpagina','=',$idpagina)
             ->first();
@@ -50,6 +48,16 @@ class DominioController extends Controller
             ->where('idpagina','=',$idpagina)
             ->get();
 
+            $galeria_index = DB::table('galeria')
+            ->where('idpagina','=',$idpagina)
+            ->take(4)
+            ->get();
+
+            $galeria_footer = DB::table('galeria')
+            ->where('idpagina','=',$idpagina)
+            ->take(6)
+            ->get();
+
             $galeria = DB::table('galeria')
             ->where('idpagina','=',$idpagina)
             ->get();
@@ -70,7 +78,14 @@ class DominioController extends Controller
             ->where('idpagina','=',$idpagina)
             ->get();
 
-            /* return view('plantillas.'.$idplantilla.'.admin'); */
+            $blog_index = DB::table('blog')
+            ->where('idpagina','=',$idpagina)
+            ->take(3)
+            ->get();
+
+            return view('plantillas.'.$idplantilla.'.index',compact('menu','items_menu','general','footer','entrada','equipo','enlace','galeria','seccion_uno','seccion_dos','slider','blog', 'galeria_index', 'galeria_footer'));
+        
+    
         }
     }
 }
