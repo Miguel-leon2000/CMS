@@ -12,6 +12,7 @@
 */
 
 Route::get('{dominio}', 'DominioController@open_page')->name('open_page');
+Route::get('{dominio}/contenido/pagina/galeria', 'DominioController@open_galeria')->name('open_galeria');
 
 Route::get('home/dashboard', 'DashboardController@index')->name('dashboard');
 
