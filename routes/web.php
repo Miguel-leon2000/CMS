@@ -15,9 +15,10 @@ Route::get('{dominio}', 'DominioController@open_page')->name('open_page');
 Route::get('{dominio}/contenido/pagina/galeria', 'DominioController@open_galeria')->name('open_galeria');
 Route::get('{dominio}/contenido/pagina/blog', 'DominioController@open_blog')->name('open_blog');
 Route::get('{dominio}/contenido/pagina/blog/{id}', 'DominioController@open_blog_single')->name('open_blog_single');
+Route::get('{dominio}/contenido/pagina/contacto', 'DominioController@open_contacto')->name('open_contacto');
+Route::post('{dominio}/contenido/pagina/contacto', 'DominioController@store_contacto')->name('store_contacto');
 
 Route::get('home/dashboard', 'DashboardController@index')->name('dashboard');
-
 
 Route::get('/', 'Auth\LoginController@showLogin')->middleware('guest')->name('loginform');
 Route::post('login', 'Auth/LoginController@login')->name('login');
@@ -109,6 +110,8 @@ Route::post('admin/blog/crear', 'BlogController@store')->name('store.blog');
 Route::get('admin/blog/{id}', 'BlogController@edit')->name('edit.blog');
 Route::patch('admin/blog/{id}', 'BlogController@update')->name('update.blog');
 Route::delete('admin/blog/{id}', 'BlogController@destroy')->name('destroy.blog');
+
+Route::get('admin/mensajes', 'ContactoController@index')->name('index.contacto');
 
 Auth::routes();
 

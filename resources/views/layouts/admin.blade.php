@@ -328,6 +328,11 @@
                             <i class="nav-icon icon-speedometer"></i> Páginas
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.contacto')}}">
+                            <i class="nav-icon icon-speedometer"></i> Mensajes
+                        </a>
+                    </li>
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#">
                             <i class="nav-icon icon-puzzle"></i>Configuraciones</a>
