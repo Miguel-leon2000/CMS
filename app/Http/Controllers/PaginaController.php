@@ -65,4 +65,28 @@ class PaginaController extends Controller
         Session::flash('succes', 'Se eliminó la página con exito.');
         return Redirect::to('admin/paginas');
     }
+
+    function change_theme(){
+
+        $pagina = DB::table('pagina')
+        ->where('id','=',auth()->user()->current_page)
+        ->first();
+
+        $plantillas = DB::table('plantilla')
+        ->get();
+
+        return view('admin.pagina.change_theme',compact('plantillas', 'pagina'));
+    }
+
+    function update_theme(Request $request){
+
+        $pagina = Pagina::findOrfail(auth()->user()->current_page);
+        $pagina->idplantilla = $request->get('idplantilla');
+        $pagina->update();
+
+        Session::flash('succes', 'Se cambió la plantilla con éxito.');
+        return Redirect::to('admin/change/plantillas');
+
+    }
+
 }

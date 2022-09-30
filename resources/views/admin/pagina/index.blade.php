@@ -53,7 +53,7 @@
                                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                                             <a class="dropdown-item" data-toggle="modal" data-target="#modal-delete-{{$item->id}}">Eliminar</a>
                                                                             <a class="dropdown-item" data-toggle="modal" data-target="#open-{{$item->id}}">Cambiar dominio</a>
-                                
+                                                                            <a class="dropdown-item" href="{{route('change_theme')}}">Cambiar plantilla</a>
                                                                         </div>
                                                                         @include('admin.pagina.modal')
 

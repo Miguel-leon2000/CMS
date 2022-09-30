@@ -112,6 +112,8 @@ Route::patch('admin/blog/{id}', 'BlogController@update')->name('update.blog');
 Route::delete('admin/blog/{id}', 'BlogController@destroy')->name('destroy.blog');
 
 Route::get('admin/mensajes', 'ContactoController@index')->name('index.contacto');
+Route::get('admin/change/plantillas','PaginaController@change_theme')->name('change_theme');
+Route::post('admin/change/plantillas','PaginaController@update_theme')->name('update_theme');
 
 Auth::routes();
 
