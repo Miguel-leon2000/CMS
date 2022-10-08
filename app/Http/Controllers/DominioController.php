@@ -53,7 +53,7 @@ class DominioController extends Controller
 
             $galeria_index = DB::table('galeria')
             ->where('idpagina','=',$idpagina)
-            ->take(4)
+            ->take(6)
             ->get();
 
             $galeria_footer = DB::table('galeria')
@@ -86,7 +86,7 @@ class DominioController extends Controller
             ->take(3)
             ->get();
 
-            return view('plantillas.'.$idplantilla.'.index',compact('menu','items_menu','general','footer','entrada','equipo','enlace','galeria','seccion_uno','seccion_dos','slider','blog', 'galeria_index', 'galeria_footer'));
+            return view('plantillas.'.$idplantilla.'.index',compact('menu','items_menu','general','footer','entrada','equipo','enlace','galeria','seccion_uno','seccion_dos','slider','blog', 'galeria_index', 'galeria_footer', 'blog_index'));
         
     
         }
@@ -244,8 +244,13 @@ class DominioController extends Controller
             ->where('idpagina','=',$idpagina)
             ->paginate(2);
 
+            $blog_index = DB::table('blog')
+            ->where('idpagina','=',$idpagina)
+            ->take(3)
+            ->paginate(2);
 
-            return view('plantillas.'.$idplantilla.'.blog',compact('menu','items_menu','general','footer','entrada','equipo','enlace','galeria','seccion_uno','seccion_dos','slider','blog', 'galeria_index', 'galeria_footer'));
+
+            return view('plantillas.'.$idplantilla.'.blog',compact('menu','items_menu','general','footer','entrada','equipo','enlace','galeria','seccion_uno','seccion_dos','slider','blog', 'galeria_index', 'galeria_footer', 'blog_index'));
     
         }
     }
@@ -397,8 +402,12 @@ class DominioController extends Controller
             ->where('idpagina','=',$idpagina)
             ->paginate(2);
 
+            $blog_index = DB::table('blog')
+            ->where('idpagina','=',$idpagina)
+            ->take(3)
+            ->paginate(2);
 
-            return view('plantillas.'.$idplantilla.'.contacto',compact('menu','items_menu','general','footer','entrada','equipo','enlace','galeria','seccion_uno','seccion_dos','slider','blog', 'galeria_index', 'galeria_footer', 'idpagina', 'dominio'));
+            return view('plantillas.'.$idplantilla.'.contacto',compact('menu','items_menu','general','footer','entrada','equipo','enlace','galeria','seccion_uno','seccion_dos','slider','blog', 'galeria_index', 'galeria_footer', 'idpagina', 'dominio', 'blog_index'));
     
         }
 
