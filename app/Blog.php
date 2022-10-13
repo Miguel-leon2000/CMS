@@ -12,6 +12,7 @@ class Blog extends Model
     public $timestamps = false;
 
     protected $fillable=[
+        'slug',
         'imagen',
         'titulo',
         'excerpt',

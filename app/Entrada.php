@@ -12,10 +12,10 @@ class Entrada extends Model
     public $timestamps = false;
 
     protected $fillable=[
-        'idpagina',
+        'slug',
         'titulo',
-        'contenido',
-
+        'contenido', 
+        'idpagina',
     ];
 
     protected $guarded=[

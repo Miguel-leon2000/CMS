@@ -8,6 +8,7 @@ use App\Entrada;
 use DB;
 use Session;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Str;
 
 class EntradaController extends Controller
 {
@@ -27,12 +28,13 @@ class EntradaController extends Controller
 
     function store(Request $request){
         $validate = $this->validate($request,[
-            'titulo' => 'required|max:150',
+            'titulo' => 'required|max:150|unique:entrada',
             'contenido' => 'required',
 
         ]);
 
         $entrada = new Entrada;
+        $entrada->slug = Str::slug($request->get('titulo'),'_');
         $entrada->titulo = $request->get('titulo');
         $entrada->contenido = $request->get('contenido');
         $entrada->idpagina = auth()->user()->current_page;
@@ -58,6 +60,7 @@ class EntradaController extends Controller
         ]);
 
         $entrada = Entrada::findOrFail($id);
+        $entrada->slug = Str::slug($request->get('titulo'),'_');
         $entrada->titulo = $request->get('titulo');
         $entrada->contenido = $request->get('contenido');
         $entrada->idpagina = auth()->user()->current_page;

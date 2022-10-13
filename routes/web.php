@@ -14,9 +14,10 @@
 Route::get('{dominio}', 'DominioController@open_page')->name('open_page');
 Route::get('{dominio}/contenido/pagina/galeria', 'DominioController@open_galeria')->name('open_galeria');
 Route::get('{dominio}/contenido/pagina/blog', 'DominioController@open_blog')->name('open_blog');
-Route::get('{dominio}/contenido/pagina/blog/{id}', 'DominioController@open_blog_single')->name('open_blog_single');
+Route::get('{dominio}/contenido/pagina/blog/{slug}', 'DominioController@open_blog_single')->name('open_blog_single');
 Route::get('{dominio}/contenido/pagina/contacto', 'DominioController@open_contacto')->name('open_contacto');
 Route::post('{dominio}/contenido/pagina/contacto', 'DominioController@store_contacto')->name('store_contacto');
+Route::get('{dominio}/contenido/{slug}','DominioController@open_entrada')->name('open_entrada');
 
 Route::get('home/dashboard', 'DashboardController@index')->name('dashboard');
 

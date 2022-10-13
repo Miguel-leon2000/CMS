@@ -8,6 +8,7 @@ use Session;
 use Illuminate\Support\Facades\Redirect;
 use App\Blog;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -27,7 +28,7 @@ class BlogController extends Controller
 
     function store(Request $request){
         $validate = $this->validate($request,[
-            'titulo' => 'required|max:250',
+            'titulo' => 'required|max:250|unique:blog',
             'excerpt' => 'required|max:800',
             'contenido' => 'required',
             'imagen'=>'required|mimes:jpeg,bmp,jpg,png|max:5000',
@@ -35,6 +36,7 @@ class BlogController extends Controller
         ]);
 
         $blog = new Blog;
+        $blog->slug = Str::slug($request->get('titulo'),'_');
         $blog->titulo = $request->get('titulo');
         $blog->excerpt = $request->get('excerpt');
         $blog->contenido = $request->get('contenido');
@@ -67,6 +69,7 @@ class BlogController extends Controller
         ]);
 
         $blog = Blog::findOrFail($id);
+        $blog->slug = Str::slug($request->get('titulo'),'_');
         $blog->titulo = $request->get('titulo');
         $blog->excerpt = $request->get('excerpt');
         $blog->contenido = $request->get('contenido');
