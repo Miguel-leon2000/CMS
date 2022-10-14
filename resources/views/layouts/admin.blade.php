@@ -433,6 +433,7 @@
     <script src="{{asset('js/coreui.min.js')}}"></script>
     <script src="{{asset('js/jscolor.js')}}"></script>
     <script src="{{asset('tinymce/tinymce.min.js')}}"></script>
+    @stack('scripts')
 
     <script>
     tinymce.init({
