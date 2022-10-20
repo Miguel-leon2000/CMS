@@ -86,13 +86,23 @@ class ConfigMenuController extends Controller
 
         $current_page = $pagina->{'current_page'};
 
+        $dato_pagina = DB::table('pagina')
+        ->where('id','=',auth()->user()->current_page)
+        ->first();
+
+        $dominio = $dato_pagina->{'dominio'};
+
         $menu = DB::table('config_menu')
         ->where('idpagina','=',$current_page)
         ->first();
 
-        $item = ConfigItem::findOrFail($id);
+        $item_menu = ConfigItem::findOrFail($id);
 
-        return view('admin.menu.edit',compact('item','menu'));
+        $entradas = DB::table('entrada')
+        ->where('idpagina','=',auth()->user()->current_page)
+        ->get();
+
+        return view('admin.menu.edit',compact('item_menu','menu', 'dominio', 'entradas'));
     }
 
     function update_item(Request $request, $id){
