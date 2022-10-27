@@ -95,11 +95,16 @@
 
                     @if (auth::check())
                     @if (auth()->user()->role=='ADMIN')
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('index.plantilla')}}">
-                            <i class="nav-icon icon-speedometer"></i> Plantillas
-                        </a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('index.plantilla')}}">
+                                <i class="nav-icon icon-book-open"></i> Plantillas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('index.usuarios')}}">
+                                <i class="nav-icon icon-people"></i> Usuarios
+                            </a>
+                        </li>
                     @endif
                     @endif
 

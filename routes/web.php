@@ -24,8 +24,8 @@ Route::get('home/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/', 'Auth\LoginController@showLogin')->middleware('guest')->name('loginform');
 Route::post('login', 'Auth/LoginController@login')->name('login');
 
-Route::get('/registrar', 'RegistroController@index')->name('registro');
-Route::post('/registrar', 'RegistroController@store')->name('store.registro');
+Route::get('op/registrar', 'RegistroController@index')->name('registro');
+Route::post('op/registrar', 'RegistroController@store')->name('store.registro');
 
 /*PLANTILLAS*/
 Route::get('admin/plantillas', 'PlantillaController@index')->name('index.plantilla');
@@ -115,6 +115,8 @@ Route::delete('admin/blog/{id}', 'BlogController@destroy')->name('destroy.blog')
 Route::get('admin/mensajes', 'ContactoController@index')->name('index.contacto');
 Route::get('admin/change/plantillas','PaginaController@change_theme')->name('change_theme');
 Route::post('admin/change/plantillas','PaginaController@update_theme')->name('update_theme');
+
+Route::get('administrador/usuarios','AdminController@index')->name('index.usuarios');
 
 Auth::routes();
 

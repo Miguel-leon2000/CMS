@@ -30,6 +30,6 @@ class RegistroController extends Controller
         $user->save();
 
         Session::flash('succes', 'Se registró exitosamente.');
-        return Redirect::to('');
+        return Redirect::to('/');
     }
 }
