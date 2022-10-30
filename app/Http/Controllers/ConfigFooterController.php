@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Redirect;
 
 class ConfigFooterController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index(){
 
         $pagina = DB::table('users')

@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Redirect;
 
 class PaginaController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     function index(){
         $data_paginas = DB::table('pagina')
         ->where('iduser', '=',auth()->user()->id)
