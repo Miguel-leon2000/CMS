@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('contenido')
             <ol class="breadcrumb">
-                <li class="breadcrumb-item active">Listado de plantillas</li>
+                <li class="breadcrumb-item active">Listado de páginas</li>
                 
             </ol>
             <div class="container-fluid">

@@ -1,4 +1,1 @@
-@extends('layouts.admin')
-@section('contenido')
-    <h1>HOLA DASHBOARD</h1>
-@endsection
+@include('admin.pagina.index')
