@@ -14,6 +14,7 @@ use App\ConfigItem;
 use App\Slider;
 use Session;
 use Illuminate\Support\Facades\Redirect;
+use App\User;
 
 class PaginaController extends Controller
 {
@@ -166,6 +167,14 @@ class PaginaController extends Controller
         Session::flash('succes', 'Se cambió la plantilla con éxito.');
         return Redirect::to('admin/change/plantillas');
 
+    }
+
+    public function current_page(Request $request, $id){
+        $user = User::findOrFail($id);
+        $user->current_page = $request->get('current_page');
+        $user->update();
+        Session::flash('succes', 'Se seleccionó su página de edición con exito');
+        return Redirect::to('admin/paginas');
     }
 
 }

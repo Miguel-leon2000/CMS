@@ -115,6 +115,8 @@
                             <i class="nav-icon icon-folder"></i> Páginas
                         </a>
                     </li>
+                    
+                    @if (auth()->user()->current_page)
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.contacto')}}">
                             <i class="nav-icon icon-envelope"></i> Mensajes
@@ -177,6 +179,8 @@
                         <a class="nav-link" href="{{route('index.blog')}}">
                             <i class="nav-icon icon-cursor"></i> Blog</a>
                     </li>
+                    @endif
+
                     @endif
                     @endif
 

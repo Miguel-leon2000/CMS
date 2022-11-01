@@ -41,6 +41,7 @@ Route::get('admin/pagina/crear', 'PaginaController@create')->name('create.pagina
 Route::post('admin/pagina/crear', 'PaginaController@store')->name('store.pagina');
 Route::patch('admin/pagina/{id}', 'PaginaController@update')->name('update.pagina');
 Route::delete('admin/pagina/{id}', 'PaginaController@destroy')->name('destroy.pagina');
+Route::patch('admin/pagina/current_page/{id}','PaginaController@current_page')->name('current_page');
 
 /*MENU*/
 Route::get('admin/configuracion/menu', 'ConfigMenuController@index')->name('index.menu');
