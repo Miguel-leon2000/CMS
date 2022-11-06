@@ -29,6 +29,7 @@
     <!-- Main Stylesheet File -->
     <link href="{{asset('themes/1001/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('css/all.css')}}" rel="stylesheet">
+    <link href="{{asset('css/fuentes.css')}}" rel="stylesheet">
 
     <!-- =======================================================
     Theme Name: BizPage
@@ -38,7 +39,7 @@
   ======================================================= -->
 </head>
 
-<body>
+<body style="font-family: {{$general->fuente}} !important; font-size: {{$general->size}} !important">
 
     <!--==========================
     Header

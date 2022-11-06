@@ -112,7 +112,7 @@
                                                         <button class="btn btn-secondary dropdown-toggle" type="button"
                                                             id="dropdownMenuButton" data-toggle="dropdown"
                                                             aria-haspopup="true" aria-expanded="false">
-                                                            Opciones
+                                                            <i class="icon-settings"></i>
                                                         </button>
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" data-toggle="modal"

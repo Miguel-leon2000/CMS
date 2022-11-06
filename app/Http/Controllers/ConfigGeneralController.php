@@ -35,11 +35,11 @@ class ConfigGeneralController extends Controller
         $validate = $this->validate($request,[
             'titulo' => 'required|max:150',
             'fuente' => 'required|max:150',
-            'size' => 'required|max:10',
+            'size' => 'required|max:50',
             'logo' => 'mimes:jpeg,bmp,jpg,png|max:5000',
             'fondo_principal' => 'mimes:jpeg,bmp,jpg,png|max:5000',
             'favicon' => 'mimes:jpeg,bmp,jpg,png|max:5000',
-            'mapa' => 'required|max:250',
+            'mapa' => 'required|max:1000',
 
         ]);
 
