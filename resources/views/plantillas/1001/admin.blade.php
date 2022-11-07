@@ -39,7 +39,7 @@
   ======================================================= -->
 </head>
 
-<body style="font-family: {{$general->fuente}} !important; font-size: {{$general->size}} !important">
+<body style="font-family: {{$general->fuente}} !important; font-size: {{$general->size}} !important;  background-image: url({{asset('recursos_fondo/'.$general->fondo)}}) !important">
 
     <!--==========================
     Header

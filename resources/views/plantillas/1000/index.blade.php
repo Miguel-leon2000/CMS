@@ -34,7 +34,7 @@
 
 
       <!-- Why Choose Divers-->
-      <section class="section section-xxl bg-default text-md-left">
+      <section class="section section-xxl text-md-left">
         <div class="container">
           <div class="row row-30 row-md-60 row-lg-70 justify-content-center align-items-md-center">
             <div class="col-sm-8 col-md-5 col-xl-6">
@@ -54,7 +54,7 @@
 
 
        <!-- Instructors-->
-       <section class="section section-xxl bg-default">
+       <section class="section section-xxl">
         <div class="container">
           <h3 class="text-spacing-0 text-transform-capitalize wow fadeScale">Nuestro equipo</h3>
           <!-- Owl Carousel-->
@@ -78,7 +78,7 @@
       </section>
 
       <!-- Why Choose Divers-->
-      <section class="section section-xxl bg-default text-md-left">
+      <section class="section section-xxl text-md-left">
         <div class="container">
           <div class="row row-30 row-md-60 row-lg-70 justify-content-center align-items-md-center">
             <div class="col-sm-8 col-md-5 col-xl-6">
@@ -98,7 +98,7 @@
 
 
       <!-- Masonry Gallery-->
-      <section class="section section-xxl bg-default">
+      <section class="section section-xxl">
         <div class="container">
           <h3 class="text-transform-capitalize wow fadeScale">Galeria</h3>
           <div class="isotope-wrap">
@@ -152,7 +152,7 @@
       </section>
 
       <!-- Enlaces recomendados-->
-      <section class="section section-xxl bg-default">
+      <section class="section section-xxl">
         <div class="container">
           <h3 class="text-transform-capitalize wow fadeScale">Enlaces recomendados</h3>
           <div class="isotope-wrap">

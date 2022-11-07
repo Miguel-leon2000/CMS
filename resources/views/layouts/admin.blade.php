@@ -139,7 +139,10 @@
                                 <a class="nav-link" href="{{route('index.footer')}}">
                                     <i class="nav-icon icon-frame"></i> Footer</a>
                             </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{route('index.fondo')}}">
+                                    <i class="nav-icon icon-picture"></i> Fondos</a>
+                            </li>
 
                         </ul>
 

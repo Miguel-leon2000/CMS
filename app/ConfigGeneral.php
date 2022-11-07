@@ -19,6 +19,7 @@ class ConfigGeneral extends Model
         'titulo',
         'favicon',
         'mapa',
+        'fondo',
         'idpagina'
 
     ];

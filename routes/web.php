@@ -119,6 +119,10 @@ Route::post('admin/change/plantillas','PaginaController@update_theme')->name('up
 
 Route::get('administrador/usuarios','AdminController@index')->name('index.usuarios');
 
+/*FONDO*/
+Route::get('admin/fondos','ConfigGeneralController@select_fondo')->name('index.fondo');
+Route::get('admin/fondos/{id}','ConfigGeneralController@update_select_fondo')->name('update.fondo');    
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

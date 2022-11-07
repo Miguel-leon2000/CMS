@@ -72,5 +72,27 @@ class ConfigGeneralController extends Controller
         return Redirect::to('admin/configuracion/general');
     }
 
+    function select_fondo(){
+
+        $general = DB::table('config_general')
+        ->where('idpagina','=',auth()->user()->current_page)
+        ->first();
+
+        $idgeneral = $general->{'id'};
+
+        return view('admin.fondo.index',compact('idgeneral','general'));
+    }
+
+    public function update_select_fondo(Request $request, $id){
+
+        $general = ConfigGeneral::findOrFail($id);
+        $general->fondo = $request->get('fondo');
+
+        $general->update();
+
+        Session::flash('succes','Se actualizó su fondo con éxito');
+        return Redirect::to('admin/fondos');
+    }
+
 
 }
