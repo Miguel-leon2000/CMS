@@ -40,7 +40,7 @@ class PaginaController extends Controller
 
     function store(Request $request){
         $validate = $this->validate($request,[
-            'dominio' => 'required|unique:pagina|regex:/^[0-9a-zA-Z\s]+$/u',
+            'dominio' => 'required|unique:pagina',
             'idplantilla' => 'required'
 
         ]);

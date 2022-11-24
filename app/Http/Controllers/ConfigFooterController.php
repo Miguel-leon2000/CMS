@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
 use App\ConfigFooter;
-
-use Session;
 use Illuminate\Support\Facades\Redirect;
+use DB;
+use Session;
+
 
 class ConfigFooterController extends Controller
 {

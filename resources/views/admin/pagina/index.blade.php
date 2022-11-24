@@ -28,9 +28,9 @@
                                     <div class="col-lg-12 form-group">
                                         <a href="{{route('create.pagina')}}" class="btn btn-primary"><i
                                                 class="fa fa-globe"></i> Registrar página</a>
-                                        <a data-toggle="modal" data-target="#open-selector" class="btn btn-warning"><i
-                                                class="fa fa-edit"></i> Página de edición</a>
-
+                                        <a data-toggle="modal" data-target="#open-selector" class="btn btn-warning"
+                                            style="color:white !important"><i class="fa fa-edit"></i> Página de
+                                            edición</a>
                                         <!-- Modal -->
                                         <div class="modal fade" id="open-selector" tabindex="-1" role="dialog"
                                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -97,7 +97,7 @@
                                             </thead>
                                             @foreach ($data_paginas as $item)
                                             <tbody>
-                                                <td>{{$item->dominio}}</td>
+                                                <td><a target="_blanck" href="https://www.{{$item->dominio}}">{{$item->dominio}}</a></td>
                                                 <td>
                                                     @if ($item->estado == 'activo')
                                                     <span class="badge badge-success"

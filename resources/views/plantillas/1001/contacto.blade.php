@@ -23,7 +23,7 @@
                 <div class="contact-phone">
                     <i class="ion-ios-telephone-outline"></i>
                     <h3>Teléfono: </h3>
-                    <p><a href="tel:+155895548855">{{$footer->telefono}}</a></p>
+                    <p><a href="tel:7444843000">{{$footer->telefono}}</a></p>
                 </div>
             </div>
 
@@ -31,7 +31,7 @@
                 <div class="contact-email">
                     <i class="ion-ios-email-outline"></i>
                     <h3>Correo: </h3>
-                    <p><a href="mailto:info@example.com">{{$footer->correo}}</a></p>
+                    <p><a href="mailto:direccion@century21lacunza.com.mx">{{$footer->correo}}</a></p>
                 </div>
             </div>
 
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="number" class="form-control" name="telefono" id="subject" placeholder="Télefono"
+                    <input type="number" class="form-control" name="telefono" id="subject" placeholder="Teléfono"
                         data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 </div>
                 <div class="form-group">

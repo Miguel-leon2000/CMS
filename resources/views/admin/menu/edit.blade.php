@@ -2,20 +2,20 @@
 @section('contenido')
 
 <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="{{route('index.plantilla')}}">Listado de plantillas</a></li>
-    <li class="breadcrumb-item active">Actualizar plantilla</li>
+    <li class="breadcrumb-item"><a href="{{route('index.menu')}}">Configuración de menu</a></li>
+    <li class="breadcrumb-item active">Actualizar elemento de menu</li>
 </ol>
 <div class="container-fluid">
     <div id="ui-view">
         <div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-24">
                 <form method="POST" action="{{route('update_item',$item_menu->id)}}" role="form" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <input name="_method" type="hidden" value="PATCH">
                     <div class="card">
                         <div class="card-header">
-                            <h4>ACTUALIZAR DE PLANTILLA</h4>
+                            <h4>ACTUALIZAR ELEMENTO DE MENU</h4>
                         </div>
                         <div class="card-body">
                            <div class="row">
@@ -146,7 +146,6 @@
                                                                         <td><i class="fas fa-home"></i></td>
                                                                         <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
                                                                         <td style="display:none">{{'<i class="fas fa-home"></i>'}}</td>
-
                                                                     </tr>
                                                                     <tr>
                                                                         <td><i class="fas fa-phone-alt"></i></td>
@@ -159,9 +158,64 @@
                                                                         <td style="display:none">{{'<i class="fas fa-photo-video"></i>'}}</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><i class="far fa-newspaper"></i></td>
+                                                                        <td><i class="fas fa-book"></i></td>
                                                                         <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
-                                                                        <td style="display:none">{{'<i class="far fa-newspaper"></i>'}}</td>
+                                                                        <td style="display:none">{{'<i class="fas fa-book"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-users"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-users"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-building"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-building"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-envelope"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-envelope"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-ruler-combined"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-ruler-combined"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-star"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-star"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fab fa-facebook"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fab fa-facebook"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fab fa-instagram"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fab fa-instagram"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fab fa-youtube"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fab fa-youtube"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-user-graduate"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-user-graduate"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-map-marker-alt"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-map-marker-alt"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-briefcase"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-briefcase"></i>'}}</td>
                                                                     </tr>
                                                                 </table>
                                                             </div>

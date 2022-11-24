@@ -14,15 +14,15 @@
         <div class="row about-cols" style="margin-top: 50px !important">
 
             @foreach ($blog as $item)
-            <div class="col-md-4 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                <a href="http://127.0.0.1:8000/midominioweb/contenido/pagina/blog/{{$item->slug}}">
+            <div class="col-md-6 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <a href="http://127.0.0.1:8000/century21lacunza.com/contenido/pagina/blog/{{$item->slug}}">
                     <div class="about-col">
                         <div class="img">
                             <img src="{{asset('blog/'.$item->imagen)}}" style="width: 100%; height: 250px;"
                                 class="img-fluid">
                             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
                         </div>
-                        <h2 class="title"><a href="#">{{$item->titulo}}</a></h2>
+                        <h2 class="title"><a href="http://127.0.0.1:8000/century21lacunza.com/contenido/pagina/blog/{{$item->slug}}">{{$item->titulo}}</a></h2>
                         <p style="text-align: center;">
                             {{$item->excerpt}}
                         </p>

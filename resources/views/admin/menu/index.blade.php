@@ -67,7 +67,7 @@
                                                     <div class="input-group">
                                                         <input type="text" id="input_enlace" class="form-control" placeholder="Enlace del menú" name="enlace">
                                                         <div class="input-group-addon">
-                                                            <a data-toggle="modal" data-target="#open-links" class="btn btn-success"><i class="fas fa-external-link-square-alt"></i></a>
+                                                            <a data-toggle="modal" data-target="#open-links" class="btn btn-success" style="color:white !important; background-color: e6e7e9"><i class="fas fa-external-link-square-alt"></i></a>
                                                         </div>
                                                     </div>
 
@@ -165,7 +165,7 @@
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" placeholder="Icono del menú" name="icono" id="input_icono">
                                                         <div class="input-group-addon">
-                                                            <a data-toggle="modal" data-target="#open-icon" class="btn btn-primary"><i class="fas fa-search"></i></a>
+                                                            <a data-toggle="modal" data-target="#open-icon" class="btn btn-primary" style="color:white !important; background:#808285 !important; border: #808285 !important"><i class="fas fa-search" ></i></a>
                                                         </div>
                                                         <!-- Modal -->
                                                         <div class="modal fade" id="open-icon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -181,27 +181,81 @@
                                                                     <div class="row">
                                                                         <div class="col-lg-12">
                                                                             <table class="table table-sm">
-                                                                                <tr>
-                                                                                    <td><i class="fas fa-home"></i></td>
-                                                                                    <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
-                                                                                    <td style="display:none">{{'<i class="fas fa-home"></i>'}}</td>
- 
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><i class="fas fa-phone-alt"></i></td>
-                                                                                    <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
-                                                                                    <td style="display:none">{{'<i class="fas fa-phone-alt"></i>'}}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><i class="fas fa-photo-video"></i></td>
-                                                                                    <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
-                                                                                    <td style="display:none">{{'<i class="fas fa-photo-video"></i>'}}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td><i class="far fa-newspaper"></i></td>
-                                                                                    <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
-                                                                                    <td style="display:none">{{'<i class="far fa-newspaper"></i>'}}</td>
-                                                                                </tr>
+                                                                            <tr>
+                                                                        <td><i class="fas fa-home"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-home"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-phone-alt"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-phone-alt"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-photo-video"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-photo-video"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-book"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-book"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-users"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-users"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-building"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-building"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-envelope"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-envelope"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-ruler-combined"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-ruler-combined"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-star"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-star"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fab fa-facebook"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fab fa-facebook"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fab fa-instagram"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fab fa-instagram"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fab fa-youtube"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fab fa-youtube"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-user-graduate"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-user-graduate"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-map-marker-alt"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-map-marker-alt"></i>'}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><i class="fas fa-briefcase"></i></td>
+                                                                        <td><button class="btn-icono btn btn-warning btn-sm" type="button"><i class="fas fa-copy"></i></button></td>
+                                                                        <td style="display:none">{{'<i class="fas fa-briefcase"></i>'}}</td>
+                                                                    </tr>
                                                                             </table>
                                                                         </div>
                                                                     </div>
@@ -213,7 +267,7 @@
                                                     </div>
                                                     
                                                 </div>
-                                                <div class="col-lg-2 form-group">
+                                                <div class="col-lg-3 form-group">
                                                     <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-check"></i> Registrar</button>
                                                 </div>
                                             </div>

@@ -80,31 +80,31 @@
                                                     <option value="8px" selected>8px</option>
                                                     <option value="10px">10px</option>
                                                     <option value="12px">12px</option>
-                                                    <option value="20px">20px</option>
+                                                    <option value="16px">16px</option>
                                                 @elseif($general->size == '10px')
                                                 <option value="">Por defecto de plantilla</option>
                                                     <option value="8px" >8px</option>
                                                     <option value="10px" selected>10px</option>
                                                     <option value="12px">12px</option>
-                                                    <option value="20px">20px</option>
+                                                    <option value="16px">16px</option>
                                                 @elseif($general->size == '12px')
                                                 <option value="">Por defecto de plantilla</option>
                                                     <option value="8px" >8px</option>
                                                     <option value="10px" >10px</option>
                                                     <option value="12px" selected>12px</option>
-                                                    <option value="20px">20px</option>
-                                                @elseif($general->size == '20px')
+                                                    <option value="16px">16px</option>
+                                                @elseif($general->size == '16px')
                                                 <option value="">Por defecto de plantilla</option>
                                                     <option value="8px" >8px</option>
                                                     <option value="10px" >10px</option>
                                                     <option value="12px">12px</option>
-                                                    <option value="20px" selected>20px</option>
+                                                    <option value="16px" selected>16px</option>
                                                  @elseif($general->size == "")
                                                  <option value="" selected>Por defecto de plantilla</option>
                                                     <option value="8px" >8px</option>
                                                     <option value="10px" >10px</option>
                                                     <option value="12px">12px</option>
-                                                    <option value="20px" >20px</option>
+                                                    <option value="16px" >16px</option>
                                                 @endif
                                                 
                                             </select>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body" style="background-color:#E4E5E6 !important">
                                 <div class="row">
                                     <div class="col-lg-12 form-group">
                                         <label><b>Logo</b></label>

@@ -8,7 +8,8 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>PANEL CMS</title>
+    <link rel="shortcut icon" href="/logos/c21-blanco-logo.png">
+    <title>CMS Lacunza & Asociados</title>
 
     <link href="{{asset('css/coreui-icons.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/fag-icon.min.css')}}" rel="stylesheet">
@@ -30,12 +31,12 @@
         </div>
         <div class="pace-activity"></div>
     </div>
-    <header class="app-header navbar">
+    <header class="app-header navbar" style="background-color:black !important">
         <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">
-            MI PANEL
+        <a class="navbar-brand" href="https://www.century21lacunza.mx" target="_blanck">
+            <img src="/logos/C21Lacunza-blanco.png" alt="logo" style="width: 127px; margin-left:10px">
         </a>
         <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
             <span class="navbar-toggler-icon"></span>
@@ -56,10 +57,10 @@
             </li>
         </ul> -->
         <ul class="nav navbar-nav ml-auto">
-    
+
             <li class="nav-item dropdown">
                 <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false" style="margin-right:50px !important">
+                    aria-expanded="false" style="margin-right:50px !important; color:white">
                     {{auth()->user()->email}}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" style="margin-right:50px !important">
@@ -77,34 +78,33 @@
                 </div>
             </li>
         </ul>
-        
+
         <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
             <span class="navbar-toggler-icon"></span>
         </button>
     </header>
     <div class="app-body">
         <div class="sidebar">
-            <nav class="sidebar-nav ps ps--active-y">
+            <nav class="sidebar-nav ps ps--active-y" style="background:#252526">
                 <ul class="nav">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('dashboard')}}">
+                        <a class="nav-link" href="#" style="color:white !important">
                             <i class="nav-icon icon-speedometer"></i> Dashboard
                         </a>
-                    </li>
-
+                   
                     @if (auth::check())
                     @if (auth()->user()->role=='ADMIN')
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('index.plantilla')}}">
-                                <i class="nav-icon icon-book-open"></i> Plantillas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('index.usuarios')}}">
-                                <i class="nav-icon icon-people"></i> Usuarios
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.plantilla')}}" style="color:white !important">
+                            <i class="nav-icon icon-book-open"></i> Plantillas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('index.usuarios')}}" style="color:white !important">
+                            <i class="nav-icon icon-people"></i> Usuarios
+                        </a>
+                    </li>
                     @endif
                     @endif
 
@@ -115,7 +115,7 @@
                             <i class="nav-icon icon-folder"></i> Páginas
                         </a>
                     </li>
-                    
+
                     @if (auth()->user()->current_page)
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.contacto')}}">
@@ -149,11 +149,11 @@
                     </li>
 
 
-                    <li class="nav-title">CONTENIDO</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('index.entrada')}}">
+                    <li class="nav-title" style="font-size:13px !important; color:#b6a888 !important">CONTENIDO</li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">
                             <i class="nav-icon icon-pencil"></i> Entradas</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.equipo')}}">
                             <i class="nav-icon icon-people"></i> Equipo</a>
@@ -211,10 +211,10 @@
     <footer class="app-footer">
         <div>
 
-            <span>Derechos Reservados a CMS - Miguel Aguirre</span>
+            <span>Copyright &copy 2022 Miguel Aguirre. Todos los derechos reservados.</span>
         </div>
         <div class="ml-auto">
-            <span>@2022</span>
+            <span>Century 21 Lacunza & Asociados</span>
         </div>
     </footer>
 

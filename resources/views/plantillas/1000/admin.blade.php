@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link rel="icon" href="logos/c21-blanco-logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CLato%7CComfortaa:300,400,700%7COpen+Sans:300,400,600,700">
     
     <link rel="stylesheet" href="{{asset('themes/1000/css/bootstrap.css')}}">
@@ -27,15 +27,7 @@
           <div class="cssload-circle">
             <div class="cssload-inner"></div>
           </div>
-          <div class="cssload-circle">
-            <div class="cssload-inner"></div>
-          </div>
-          <div class="cssload-circle">
-            <div class="cssload-inner"></div>
-          </div>
-          <div class="cssload-circle">
-            <div class="cssload-inner"></div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -48,11 +40,11 @@
             <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
             <div class="rd-navbar-aside-outer">
               <div class="rd-navbar-aside">
-                <div class="rd-navbar-collapse">
+                <div class="rd-navbar-collapse" style= "font-size:13px !important">
                   <ul class="contacts-classic">
-                    <li><span class="contacts-classic-title" style="color: {{$menu->color}} !important">Teléfono:</span> <a href="tel:#">{{$footer->telefono}}</a>
+                    <li><span class="contacts-classic-title" style="color: white">Teléfono:</span> <a href="tel:#">{{$footer->telefono}}</a>
                     </li>
-                    <li style="color: {{$menu->color}} !important"><a href="mailto:#">{{$footer->correo}}</a></li>
+                    <li style="color: white"><a href="mailto:#">{{$footer->correo}}</a></li>
                   </ul>
                 </div>
                 <!-- RD Navbar Panel-->
@@ -73,7 +65,7 @@
                   <ul class="rd-navbar-nav" style="color: {{$menu->color}} !important">
                     
                     @foreach ($items_menu as $item)
-                      <li class="rd-nav-item" style="color: {{$menu->color}} !important"><a class="rd-nav-link" href="{{$item->enlace}}"><?php echo $item->icono ?> {{$item->titulo}}</a>
+                      <li class="rd-nav-item" style="color: white !important"><a class="rd-nav-link" style="font-size:13px" href="{{$item->enlace}}"><?php echo $item->icono ?> {{$item->titulo}}</a>
                       </li>
                     @endforeach
 
@@ -90,7 +82,7 @@
 
       <!-- Page Footer-->
       <footer class="section footer-modern footer-modern-2">
-        <div class="footer-modern-body section-xl context-dark" style="background: {{$footer->background}} !important">
+        <div class="footer-modern-body section-xl context-dark" style="background:black !important">
           <div class="container">
             <div class="row row-40 row-md-50 justify-content-xl-between">
               <div class="col-md-10 col-lg-3 col-xl-4 wow fadeInRight">
@@ -108,11 +100,11 @@
                 </div>
               </div>
               <div class="col-sm-6 col-md-7 col-lg-5 wow fadeInRight" data-wow-delay=".1s">
-                <h5 class="footer-modern-title">Enlaces</h5>
+                <h5 class="footer-modern-title">Redes sociales</h5>
                 <ul class="footer-modern-list footer-modern-list-2 d-sm-inline-block d-md-block">
 
                     @foreach($items_menu as $item)
-                      <li style="color: {{$menu->color}} !important"><a href="{{$item->enlace}}"><?php echo $item->icono?>  {{$item->titulo}}
+                      <li style="color:white !important"><a href="{{$item->enlace}}"><?php echo $item->icono?>  {{$item->titulo}}
                       </a>
                       </li>
                     @endforeach
@@ -143,16 +135,13 @@
                 </ul>
                 <ul class="list-inline list-social-3 list-inline-sm">
                   <li><a class="icon mdi mdi-facebook icon-xxs" href="#"></a></li>
-                  <li><a class="icon mdi mdi-twitter icon-xxs" href="#"></a></li>
                   <li><a class="icon mdi mdi-instagram icon-xxs" href="#"></a></li>
-                  <li><a class="icon mdi mdi-google-plus icon-xxs" href="#"></a></li>
-                  <li><a class="icon mdi mdi-skype icon-xxs" href="#"></a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-modern-panel text-center">
+        <div class="footer-modern-panel text-center" style="background:black !important">
           <div class="container">
             <p class="rights">{{$footer->cr}}</p>
           </div>

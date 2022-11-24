@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">REGISTRO DE USUARIO</div>
+                <div class="card-header" style="background-color:#beaf87 !important; color:white !important; font-family:sans-serif">REGISTRO DE USUARIO</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('store.registro') }}">
@@ -63,7 +63,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style="background-color:#e6e8e9; color:black !important; border-color:gray !important">
                                     Registrar
                                 </button>
                             </div>

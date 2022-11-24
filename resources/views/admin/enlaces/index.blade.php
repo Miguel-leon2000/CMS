@@ -49,7 +49,7 @@
                                             </thead>
                                             @foreach ($enlace as $item)
                                             <tbody>
-                                                <td><a href="{{$item->enlace}}" target="_blank"><img src="{{asset('enlace/'.$item->imagen)}}" style="width:120px !important"></a></td>
+                                                <td><a href="{{$item->enlace}}" target="_blank"><img src="{{asset('enlace/'.$item->imagen)}}" style="width:40px !important"></a></td>
                                                
                                                 <td>
                                                     <div class="dropdown">

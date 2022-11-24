@@ -24,8 +24,8 @@ Route::get('home/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/', 'Auth\LoginController@showLogin')->middleware('guest')->name('loginform');
 Route::post('login', 'Auth/LoginController@login')->name('login');
 
-Route::get('op/registrar', 'RegistroController@index')->name('registro');
-Route::post('op/registrar', 'RegistroController@store')->name('store.registro');
+Route::get('login/registrar', 'RegistroController@index')->name('registro');
+Route::post('login/registrar', 'RegistroController@store')->name('store.registro');
 
 /*PLANTILLAS*/
 Route::get('admin/plantillas', 'PlantillaController@index')->name('index.plantilla');

@@ -1,6 +1,7 @@
 @extends('layouts.admin')
 @section('contenido')
 <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{{route('index.pagina')}}">Listado de páginas</a></li>
     <li class="breadcrumb-item active">Mercado de plantillas</li>
 
 </ol>

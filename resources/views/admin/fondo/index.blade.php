@@ -49,8 +49,8 @@
                                                         <input type="hidden" name="fondo" value="{{$general->fondo}}">
                                                         <div class="card">
                                                             <img src="{{asset('recursos_fondo/'.$general->fondo)}}" style="width:100% !important">
-                                                            <div class="card-body" style="background: gray !important; color: white !important">
-                                                                <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
+                                                            <div class="card-body" style="background: #b6a888 !important; color: white !important">
+                                                                <center><button type="submit" class="btn btn-primary">Seleccionado</button></center>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -61,9 +61,9 @@
                                                 <form action="{{route('update.fondo',$idgeneral)}}">
                                                     {{ csrf_field() }}
                                                     <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo1.png">
+                                                    <input type="hidden" name="fondo" value="beige-1.png">
                                                     <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo1.png')}}" style="width:100% !important">
+                                                        <img src="{{asset('recursos_fondo/beige-1.png')}}" style="width:100% !important">
                                                         <div class="card-body">
                                                             <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
                                                         </div>
@@ -74,9 +74,9 @@
                                                 <form action="{{route('update.fondo',$idgeneral)}}">
                                                     {{ csrf_field() }}
                                                     <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo2.png">
+                                                    <input type="hidden" name="fondo" value="beige-2.png">
                                                     <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo2.png')}}" style="width:100% !important">
+                                                        <img src="{{asset('recursos_fondo/beige-2.png')}}" style="width:100% !important">
                                                         <div class="card-body">
                                                             <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
                                                         </div>
@@ -87,9 +87,9 @@
                                                 <form action="{{route('update.fondo',$idgeneral)}}">
                                                     {{ csrf_field() }}
                                                     <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo3.png">
+                                                    <input type="hidden" name="fondo" value="beige-3.png">
                                                     <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo3.png')}}" style="width:100% !important">
+                                                        <img src="{{asset('recursos_fondo/beige-3.png')}}" style="width:100% !important">
                                                         <div class="card-body">
                                                             <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
                                                         </div>
@@ -100,9 +100,9 @@
                                                 <form action="{{route('update.fondo',$idgeneral)}}">
                                                     {{ csrf_field() }}
                                                     <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo4.png">
+                                                    <input type="hidden" name="fondo" value="gris-1.png">
                                                     <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo4.png')}}" style="width:100% !important">
+                                                        <img src="{{asset('recursos_fondo/gris-1.png')}}" style="width:100% !important">
                                                         <div class="card-body">
                                                             <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
                                                         </div>
@@ -113,9 +113,9 @@
                                                 <form action="{{route('update.fondo',$idgeneral)}}">
                                                     {{ csrf_field() }}
                                                     <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo5.png">
+                                                    <input type="hidden" name="fondo" value="gris-2.png">
                                                     <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo5.png')}}" style="width:100% !important">
+                                                        <img src="{{asset('recursos_fondo/gris-2.png')}}" style="width:100% !important">
                                                         <div class="card-body">
                                                             <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
                                                         </div>
@@ -126,9 +126,9 @@
                                                 <form action="{{route('update.fondo',$idgeneral)}}">
                                                     {{ csrf_field() }}
                                                     <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo6.png">
+                                                    <input type="hidden" name="fondo" value="gris-3.png">
                                                     <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo6.png')}}" style="width:100% !important">
+                                                        <img src="{{asset('recursos_fondo/gris-3.png')}}" style="width:100% !important">
                                                         <div class="card-body">
                                                             <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
                                                         </div>
@@ -139,9 +139,9 @@
                                                 <form action="{{route('update.fondo',$idgeneral)}}">
                                                     {{ csrf_field() }}
                                                     <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo7.png">
+                                                    <input type="hidden" name="fondo" value="negro.png">
                                                     <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo7.png')}}" style="width:100% !important">
+                                                        <img src="{{asset('recursos_fondo/negro.png')}}" style="width:100% !important">
                                                         <div class="card-body">
                                                             <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
                                                         </div>
@@ -152,41 +152,16 @@
                                                 <form action="{{route('update.fondo',$idgeneral)}}">
                                                     {{ csrf_field() }}
                                                     <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo8.png">
+                                                    <input type="hidden" name="fondo" value="blanco.png">
                                                     <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo8.png')}}" style="width:100% !important">
+                                                        <img src="{{asset('recursos_fondo/blanco.png')}}" style="width:100% !important">
                                                         <div class="card-body">
                                                             <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
-                                            <div class="col-lg-2">
-                                                <form action="{{route('update.fondo',$idgeneral)}}">
-                                                    {{ csrf_field() }}
-                                                    <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo9.png">
-                                                    <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo9.png')}}" style="width:100% !important">
-                                                        <div class="card-body">
-                                                            <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="col-lg-2">
-                                                <form action="{{route('update.fondo',$idgeneral)}}">
-                                                    {{ csrf_field() }}
-                                                    <input name="_method" type="hidden" value="PATCH">
-                                                    <input type="hidden" name="fondo" value="fondo10.png">
-                                                    <div class="card">
-                                                        <img src="{{asset('recursos_fondo/fondo10.png')}}" style="width:100% !important">
-                                                        <div class="card-body">
-                                                            <center><button type="submit" class="btn btn-warning">Seleccionar</button></center>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>

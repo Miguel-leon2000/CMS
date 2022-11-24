@@ -14,7 +14,7 @@
             <div class="carousel-inner" role="listbox">
 
                 <div class="carousel-item active">
-                    <div class="carousel-background"><img src="{{asset('sliders/'.$slider[0]->imagen)}}" alt=""></div>
+                    <div class="carousel-background"><img src="{{asset('sliders/'.$slider[0]->imagen)}}" style="filter: brightness(150%)" alt=""></div>
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2>{{$slider[0]->titulo}}</h2>
@@ -25,7 +25,7 @@
                 @foreach($slider as $item)
                 @if($item->id != $slider[0]->id)
                 <div class="carousel-item">
-                    <div class="carousel-background"><img src="{{asset('sliders/'.$item->imagen)}}" alt=""></div>
+                    <div class="carousel-background"><img src="{{asset('sliders/'.$item->imagen)}}" style="filter: brightness(150%)" alt=""></div>
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2>{{$item->titulo}}</h2>
@@ -108,7 +108,7 @@
                                 class="img-fluid">
                             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
                         </div>
-                        <h2 class="title"><a href="#">{{$item->titulo}}</a></h2>
+                        <h2 class="title"><a href="http://127.0.0.1:8000/century21lacunza.com/contenido/pagina/blog/{{$item->slug}}">{{$item->titulo}}</a></h2>
                         <p style="text-align: center;">
                             {{$item->excerpt}}
                         </p>
@@ -163,11 +163,11 @@
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.1s">
                         <div class="portfolio-wrap">
                             <figure>
-                                <img src="{{asset('galeria/'.$item->imagen)}}" class="img-fluid" style="height: 250px">
+                                <img src="{{asset('galeria/'.$item->imagen)}}" class="img-fluid" style="height: 250px; width:100%">
                                 <a href="{{asset('galeria/'.$item->imagen)}}" data-lightbox="portfolio" 
-                                    class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                                <a href="#" class="link-details" title="More Details">
-                                    <i class="ion ion-android-open"></i></a>
+                                    class="link-preview" title="Vista previa" style="margin-left:25px !important; "><i class="ion ion-eye"></i></a>
+                                <!--<a href="#" class="link-details" title="More Details">
+                                    <i class="ion ion-android-open"></i></a>-->
                             </figure>
 
                         </div>
@@ -185,12 +185,12 @@
         <div class="container">
 
             <header class="section-header">
-                <h3>Enlaces recomendados</h3>
+                <h3>Redes sociales</h3>
             </header>
 
             <div class="owl-carousel clients-carousel">
                 @foreach ($enlace as $item)
-                    <a href="$item->enlace" target="_blanck"><img src="{{asset('enlace/'.$item->imagen)}}" alt=""></a>
+                    <a href="{{$item->enlace}}" target="_blanck"><img src="{{asset('enlace/'.$item->imagen)}}" alt="" style="width:80px !important"></a>
                 @endforeach
                 
             </div>
@@ -216,12 +216,11 @@
                         <h3>{{$item->nombres}}
                         </h3>
                         <h4>{{$item->cargo}}</h4>
-                      
                     </div>
                 @endforeach
-
+                    
             </div>
-
+            <p class="text-center" style="margin-top:25px; font-family:sans-serif">Asesores inmobiliarios profesionales</p>
         </div>
     </section><!-- #testimonials -->
 
@@ -235,19 +234,17 @@
                 
             </div>
 
-            <div class="row">
+            <div class="row" style="margin-left:60px">
 
                 @foreach ($equipo as $item)
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
-                        <div class="member">
-                            <img src="{{asset('equipo/'.$item->imagen)}}" class="img-fluid" style="height: 280px">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>{{$item->nombres}}</h4>
+                        <div class="member" style="width:150px; background:transparent">
+                            <img src="{{asset('equipo/'.$item->imagen)}}" class="img-fluid" style="border-radius:50%">
+                            <div class="member-info" style="border-radius:50%">
+                                <div class="member-info-content" >
+                                    <h4 style="font-size:11px">{{$item->nombres}}</h4>
                                     <span>{{$item->cargo}}</span>
-                                    <div class="social">       
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
