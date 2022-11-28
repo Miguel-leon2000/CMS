@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('contenido')
 <ol class="breadcrumb">
-    <li class="breadcrumb-item active">Galeria</li>
+    <li class="breadcrumb-item active">Propiedades</li>
 
 </ol>
 <div class="container-fluid">
@@ -33,13 +33,13 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5>MI GALERIA</h5>
+                                <h5>MIS PROPIEDADES</h5>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-lg-12 form-group">
                                         <a href="{{route('create.galeria')}}" type="button" class="btn btn-success"
-                                            data-toggle="modal" data-target="#addphoto">Agregar foto</a>
+                                            data-toggle="modal" data-target="#addphoto">Agregar propiedad</a>
 
                                         <!-- Modal -->
                                         <div class="modal fade" id="addphoto" tabindex="-1" role="dialog"

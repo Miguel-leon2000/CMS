@@ -164,7 +164,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.galeria')}}">
-                            <i class="nav-icon icon-picture"></i> Galeria</a>
+                            <i class="nav-icon icon-picture"></i> Propiedades</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('index.seccion_uno')}}">
